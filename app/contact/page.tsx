@@ -33,7 +33,7 @@ export default function ContactPage() {
               <Link href="/services" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
                 Services
               </Link>
-              <Link href="/#markets" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
+              <Link href="/markets" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
                 Markets
               </Link>
               <Link
