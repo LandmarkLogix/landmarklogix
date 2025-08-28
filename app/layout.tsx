@@ -6,7 +6,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: {
-    default: "Landmark Logix - Expert Owner's Representative Services",
+    default: "Landmark Logix - Owner's Representation and Project Management",
     template: "%s | Landmark Logix",
   },
   description:
@@ -27,8 +27,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
-    title: "Landmark Logix - Building Landmarks That Stand the Test of Time",
+    title: "Landmark Logix - Owner's Representation and Project Management",
     description:
       "Expert owner's representative services for public-facing landmark buildings. From historic preservation to modern civic architecture.",
     url: "https://landmarklogix.com",
@@ -46,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Landmark Logix - Expert Owner's Representative Services",
+    title: "Landmark Logix - Owner's Representation and Project Management",
     description:
       "Building landmarks that stand the test of time. 20+ years of excellence in historic preservation and civic architecture.",
     images: ["/images/landmark-logix-og.jpg"],
