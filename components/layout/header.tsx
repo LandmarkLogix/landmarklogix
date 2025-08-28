@@ -51,7 +51,7 @@ export function Header() {
             </li>
             <li role="none">
               <Link
-                href="/#why-choose-us"
+                href="/why-choose-us"
                 className="text-slate-600 hover:text-[#00205B] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2"
                 role="menuitem"
               >
