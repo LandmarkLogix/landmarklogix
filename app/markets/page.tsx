@@ -25,11 +25,11 @@ import Link from "next/link"
 export default function MarketsPage() {
   const markets = [
     {
-      id: "cultural-arts",
-      title: "Cultural & Arts",
-      icon: Palette,
-      description: "Museums, performing arts centers, cultural heritage sites, and historic preservation projects",
-      image: "/placeholder.svg?height=300&width=400&text=Museum+with+classical+architecture",
+      id: "sports-athletics",
+      title: "Sports & Athletics",
+      icon: Trophy,
+      description: "Professional venues, collegiate facilities, training centers, and community sports complexes",
+      image: "/placeholder.svg?height=300&width=400&text=Modern+sports+stadium+architecture",
     },
     {
       id: "entertainment-leisure",
@@ -39,18 +39,18 @@ export default function MarketsPage() {
       image: "/placeholder.svg?height=300&width=400&text=Entertainment+venue+with+modern+design",
     },
     {
-      id: "sports-athletics",
-      title: "Sports & Athletics",
-      icon: Trophy,
-      description: "Professional venues, collegiate facilities, training centers, and community sports complexes",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+sports+stadium+architecture",
-    },
-    {
       id: "hospitality-tourism",
       title: "Hospitality & Tourism",
       icon: Hotel,
       description: "Luxury hotels, resorts, restaurants, conference centers, and tourism infrastructure",
       image: "/placeholder.svg?height=300&width=400&text=Luxury+hotel+with+elegant+facade",
+    },
+    {
+      id: "cultural-arts",
+      title: "Cultural & Arts",
+      icon: Palette,
+      description: "Museums, performing arts centers, cultural heritage sites, and historic preservation projects",
+      image: "/placeholder.svg?height=300&width=400&text=Museum+with+classical+architecture",
     },
     {
       id: "education-research",
@@ -74,11 +74,11 @@ export default function MarketsPage() {
       image: "/placeholder.svg?height=300&width=400&text=Government+building+with+classical+columns",
     },
     {
-      id: "transportation-infrastructure",
-      title: "Transportation & Infrastructure",
-      icon: Plane,
-      description: "Airports, train stations, bridges, ports, and multi-modal transportation hubs",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+airport+terminal+architecture",
+      id: "residential-community",
+      title: "Residential & Community",
+      icon: Home,
+      description: "High-end residential, estate development, luxury living, and community planning",
+      image: "/placeholder.svg?height=300&width=400&text=Luxury+residential+development+architecture",
     },
     {
       id: "healthcare-wellness",
@@ -88,18 +88,18 @@ export default function MarketsPage() {
       image: "/placeholder.svg?height=300&width=400&text=Modern+hospital+building+with+healing+design",
     },
     {
-      id: "residential-community",
-      title: "Residential & Community",
-      icon: Home,
-      description: "High-end residential, estate development, luxury living, and community planning",
-      image: "/placeholder.svg?height=300&width=400&text=Luxury+residential+development+architecture",
-    },
-    {
       id: "industrial-specialized",
       title: "Industrial & Specialized",
       icon: Factory,
       description: "Manufacturing, energy facilities, specialized environments, and mission-critical operations",
       image: "/placeholder.svg?height=300&width=400&text=Modern+industrial+facility+architecture",
+    },
+    {
+      id: "transportation-infrastructure",
+      title: "Transportation & Infrastructure",
+      icon: Plane,
+      description: "Airports, train stations, bridges, ports, and multi-modal transportation hubs",
+      image: "/placeholder.svg?height=300&width=400&text=Modern+airport+terminal+architecture",
     },
   ]
 
@@ -420,8 +420,8 @@ export default function MarketsPage() {
               <h4 className="font-semibold mb-4 text-[#C5B783]">Featured Markets</h4>
               <ul className="space-y-2 text-slate-300 text-sm">
                 <li>
-                  <Link href="/markets/cultural-arts" className="hover:text-[#C5B783] transition-colors">
-                    Cultural & Arts
+                  <Link href="/markets/sports-athletics" className="hover:text-[#C5B783] transition-colors">
+                    Sports & Athletics
                   </Link>
                 </li>
                 <li>
