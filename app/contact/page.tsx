@@ -36,10 +36,7 @@ export default function ContactPage() {
               <Link href="/markets" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
                 Markets
               </Link>
-              <Link
-                href="/#why-choose-us"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium"
-              >
+              <Link href="/why-choose-us" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
                 Why Choose Us
               </Link>
               <Link href="/contact" className="text-[#00205B] font-semibold">

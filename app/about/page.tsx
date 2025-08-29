@@ -4,51 +4,14 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
+import { Header } from "@/components/layout/header"
+import { Footer } from "@/components/layout/footer"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center">
-              <Link href="/">
-                <Image
-                  src="/images/landmark-logix-logo.png"
-                  alt="Landmark Logix"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto cursor-pointer"
-                />
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link href="/about" className="text-[#00205B] font-semibold">
-                About
-              </Link>
-              <Link href="/services" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Services
-              </Link>
-              <Link href="/" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Markets
-              </Link>
-              <Link
-                href="/#why-choose-us"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium"
-              >
-                Why Choose Us
-              </Link>
-              <Link href="/contact" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Contact
-              </Link>
-            </div>
-            <Link href="/contact">
-              <Button className="bg-[#00205B] hover:bg-[#000034] text-white font-medium">Get Consultation</Button>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-20 lg:py-28">
@@ -410,68 +373,7 @@ export default function AboutPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#000034] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/images/landmark-logix-logo.png"
-                  alt="Landmark Logix"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto brightness-0 invert"
-                />
-              </div>
-              <p className="text-slate-300 mb-4">Building landmarks that stand the test of time</p>
-              <p className="text-slate-400 text-sm">© 2024 Landmark Logix. All rights reserved.</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Company</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>
-                  <Link href="/about" className="hover:text-[#C5B783] transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-[#C5B783] transition-colors">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-[#C5B783] transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Services</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>Owner's Representation</li>
-                <li>Project Management</li>
-                <li>Historic Preservation</li>
-                <li>Regulatory Navigation</li>
-                <li>Quality Assurance</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Markets</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>Museums & Cultural Centers</li>
-                <li>Civic Buildings</li>
-                <li>Educational Institutions</li>
-                <li>Religious Buildings</li>
-                <li>Historic Renovations</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

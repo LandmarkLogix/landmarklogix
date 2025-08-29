@@ -48,10 +48,7 @@ export default function EducationResearchPage() {
               <Link href="/markets" className="text-[#00205B] font-semibold">
                 Markets
               </Link>
-              <Link
-                href="/#why-choose-us"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium"
-              >
+              <Link href="/why-choose-us" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
                 Why Choose Us
               </Link>
               <Link href="/contact" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">

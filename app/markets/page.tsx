@@ -130,10 +130,7 @@ export default function MarketsPage() {
               <Link href="/markets" className="text-[#00205B] font-semibold">
                 Markets
               </Link>
-              <Link
-                href="/#why-choose-us"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium"
-              >
+              <Link href="/why-choose-us" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
                 Why Choose Us
               </Link>
               <Link href="/contact" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
@@ -395,6 +392,11 @@ export default function MarketsPage() {
                 <li>
                   <Link href="/services" className="hover:text-[#C5B783] transition-colors">
                     Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/why-choose-us" className="hover:text-[#C5B783] transition-colors">
+                    Why Choose Us
                   </Link>
                 </li>
                 <li>
