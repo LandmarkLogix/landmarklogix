@@ -16,7 +16,7 @@ export default function ServicesPage() {
       description:
         "Feasibility analysis with ROI considerations, stakeholder alignment, and expectation management for complex commercial projects",
       serviceCount: "10 specialized services",
-      image: "/placeholder.svg?height=300&width=400&text=Strategic+planning+for+sports+entertainment+facilities",
+      image: "/strategic-planning-commercial-construction-with-.png",
     },
     {
       id: "procurement-financial",
@@ -25,7 +25,7 @@ export default function ServicesPage() {
       description:
         "Budget development with lifecycle cost analysis, design team selection, and cost management for revenue-critical projects",
       serviceCount: "10 specialized services",
-      image: "/placeholder.svg?height=300&width=400&text=Financial+planning+for+commercial+construction+projects",
+      image: "/financial-planning-construction-budget-analysis-.png",
     },
     {
       id: "contract-risk",
@@ -34,7 +34,7 @@ export default function ServicesPage() {
       description:
         "Advanced project coordination for multi-stakeholder environments and change management with cost-impact analysis",
       serviceCount: "10 specialized services",
-      image: "/placeholder.svg?height=300&width=400&text=Risk+management+for+complex+commercial+projects",
+      image: "/construction-risk-management-with-safety-protoc.png",
     },
     {
       id: "design-regulatory",
@@ -43,7 +43,7 @@ export default function ServicesPage() {
       description:
         "Design oversight for high-performance facilities, permitting, and compliance management for commercial developments",
       serviceCount: "10 specialized services",
-      image: "/placeholder.svg?height=300&width=400&text=Design+management+for+sports+entertainment+venues",
+      image: "/architectural-design-review-for-commercial-cons.png",
     },
     {
       id: "construction-quality",
@@ -52,7 +52,7 @@ export default function ServicesPage() {
       description:
         "Quality control systems for high-performance facilities and schedule optimization for revenue-critical timelines",
       serviceCount: "10 specialized services",
-      image: "/placeholder.svg?height=300&width=400&text=Construction+management+for+commercial+facilities",
+      image: "/construction-quality-control-inspection-with-p.png",
     },
     {
       id: "technology-transition",
@@ -61,7 +61,7 @@ export default function ServicesPage() {
       description:
         "Advanced technical systems coordination, operational planning, and performance optimization for commercial facilities",
       serviceCount: "10 specialized services",
-      image: "/placeholder.svg?height=300&width=400&text=Technology+integration+for+modern+commercial+buildings",
+      image: "/modern-building-technology-integration-with-sm.png",
     },
   ]
 
@@ -193,8 +193,8 @@ export default function ServicesPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Comprehensive+commercial+project+management+overview"
-                alt="Comprehensive commercial project management"
+                src="/comprehensive-construction-project-management.png"
+                alt="Comprehensive commercial construction project management with multiple stakeholders and advanced coordination systems"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"

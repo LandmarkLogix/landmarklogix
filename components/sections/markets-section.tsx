@@ -2,46 +2,47 @@ import { MarketCard } from "@/components/cards/market-card"
 
 const markets = [
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Stadium+construction+with+modern+architecture",
-    imageAlt: "Modern stadium under construction showcasing complex steel framework and sports facility expertise",
+    imageSrc: "/professional-stadium-interior-with-modern-seating-.png",
+    imageAlt:
+      "Professional stadium interior showcasing modern seating, advanced lighting systems, and sports facility expertise",
     title: "Sports & Athletics",
     description:
       "Stadiums, arenas, training facilities, and sports complexes requiring expert coordination of fan experience, safety systems, and operational efficiency.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Entertainment+venue+theater+construction",
+    imageSrc: "/concert-hall-architecture-with-advanced-acoustics-.png",
     imageAlt:
-      "Entertainment venue and theater construction with advanced technical systems and patron experience design",
+      "Concert hall and theater architecture featuring advanced acoustics, stage lighting, and patron experience design",
     title: "Entertainment & Leisure",
     description:
       "Theaters, concert venues, entertainment complexes, and recreational facilities emphasizing patron experience and complex technical systems integration.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Hotel+resort+construction+hospitality",
+    imageSrc: "/luxury-hotel-construction-with-modern-lobby-and-ho.png",
     imageAlt:
-      "Hotel and resort construction showcasing hospitality design focused on guest experience and operational efficiency",
+      "Luxury hotel construction showcasing modern lobby design, hospitality architecture, and guest experience optimization",
     title: "Hospitality & Tourism",
     description:
       "Hotels, resorts, conference centers, and destination facilities optimizing guest experience, operational efficiency, and revenue potential.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Museum+cultural+center+modern+design",
+    imageSrc: "/modern-museum-architecture-with-contemporary-galle.png",
     imageAlt:
-      "Museum and cultural center with modern design balancing heritage preservation with contemporary functionality",
+      "Modern museum architecture featuring contemporary gallery spaces balancing heritage preservation with innovative design",
     title: "Cultural & Arts",
     description:
       "Museums, galleries, performing arts centers, and cultural institutions balancing heritage preservation with modern functionality.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=University+campus+educational+facility",
-    imageAlt: "University campus and educational facility construction creating inspiring learning environments",
+    imageSrc: "/university-construction-with-modern-campus-buildin.png",
+    imageAlt: "University campus construction featuring modern academic buildings and innovative learning environments",
     title: "Education & Research",
     description:
       "Universities, schools, laboratories, and learning facilities creating inspiring environments that support academic and research excellence.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Corporate+office+commercial+building",
-    imageAlt: "Corporate office and commercial building construction focused on efficiency and tenant satisfaction",
+    imageSrc: "/commercial-construction-with-modern-office-buildin.png",
+    imageAlt: "Commercial office building construction featuring modern glass facade and efficient workspace design",
     title: "Corporate & Commercial",
     description:
       "Office buildings, retail spaces, mixed-use developments focused on maximizing ROI, efficiency, and tenant satisfaction.",

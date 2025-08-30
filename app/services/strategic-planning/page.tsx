@@ -189,8 +189,8 @@ export default function StrategicPlanningPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Strategic+planning+consultation+and+project+roadmap"
-                alt="Strategic planning consultation"
+                src="/strategic-planning-commercial-construction-with-.png"
+                alt="Strategic planning consultation with project roadmap and commercial construction planning documents"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -224,8 +224,8 @@ export default function StrategicPlanningPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Project+strategy+meeting+with+stakeholders"
-                alt="Strategic planning meeting"
+                src="/project-strategy-meeting-with-stakeholders-.png"
+                alt="Project strategy meeting with stakeholders reviewing construction plans and development timeline"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -439,8 +439,8 @@ export default function StrategicPlanningPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Strategic+planning+process+and+methodology"
-                alt="Strategic planning process"
+                src="/strategic-planning-process-and-methodology-.png"
+                alt="Strategic planning process and methodology with construction project management documentation"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg"

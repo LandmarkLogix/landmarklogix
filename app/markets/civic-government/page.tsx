@@ -133,8 +133,8 @@ export default function CivicGovernmentPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Government+building+with+classical+columns+and+modern+elements"
-                alt="Civic government landmark building"
+                src="/government-building-construction-with-classical-.png"
+                alt="Civic government landmark building with classical architecture and modern security features"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -168,8 +168,8 @@ export default function CivicGovernmentPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Government+building+interior+with+public+spaces"
-                alt="Government building interior"
+                src="/government-interior-public-spaces-with-securit.png"
+                alt="Government building interior with accessible public spaces and security features"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -347,8 +347,8 @@ export default function CivicGovernmentPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Government+facility+construction+with+security+features"
-                alt="Government facility construction"
+                src="/government-facility-construction-with-advance.png"
+                alt="Government facility construction with advanced security and accessibility features"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg"

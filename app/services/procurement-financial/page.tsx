@@ -191,8 +191,8 @@ export default function ProcurementFinancialPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Financial+planning+and+budget+management+charts"
-                alt="Financial planning and management"
+                src="/financial-planning-construction-budget-analysis-.png"
+                alt="Financial planning and budget management with construction cost analysis charts and professional consultation"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -226,8 +226,8 @@ export default function ProcurementFinancialPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Budget+analysis+and+cost+control+dashboard"
-                alt="Budget analysis and cost control"
+                src="/budget-analysis-and-cost-control-dashboard-w.png"
+                alt="Budget analysis and cost control dashboard with financial performance metrics and project tracking"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"

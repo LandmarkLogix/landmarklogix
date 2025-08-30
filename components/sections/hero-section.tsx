@@ -52,8 +52,8 @@ export function HeroSection() {
             </div>
             <div className="relative order-first lg:order-last">
               <ImageWithFallback
-                src="/placeholder.svg?height=600&width=800&text=Modern+stadium+construction+with+steel+framework+and+cranes"
-                alt="Modern stadium or sports facility under construction showcasing complex steel framework and construction management expertise"
+                src="/modern-stadium-construction-with-steel-framework-a.png"
+                alt="Modern stadium under construction showcasing complex steel framework, construction cranes, and professional construction management expertise"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl w-full h-auto"

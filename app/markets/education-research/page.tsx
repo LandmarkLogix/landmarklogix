@@ -133,8 +133,8 @@ export default function EducationResearchPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Modern+university+building+with+innovative+architecture"
-                alt="Education research landmark building"
+                src="/modern-university-building-with-innovative-a.png"
+                alt="Education research landmark building with modern university architecture and innovative design"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -168,8 +168,8 @@ export default function EducationResearchPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=University+library+interior+with+study+spaces"
-                alt="University library interior"
+                src="/university-library-interior-with-study-spac.png"
+                alt="University library interior with modern study spaces and collaborative learning areas"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"

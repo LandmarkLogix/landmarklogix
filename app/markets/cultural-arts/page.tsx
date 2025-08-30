@@ -133,8 +133,8 @@ export default function CulturalArtsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Museum+with+classical+architecture+and+modern+elements"
-                alt="Cultural arts landmark building"
+                src="/museum-with-classical-architecture-and-modern.png"
+                alt="Cultural arts landmark museum with classical architecture and modern gallery spaces"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
@@ -169,8 +169,8 @@ export default function CulturalArtsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Museum+interior+with+art+galleries+and+visitors"
-                alt="Museum interior design"
+                src="/museum-interior-with-art-galleries-and-visit.png"
+                alt="Museum interior with art galleries and visitors experiencing cultural exhibitions"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -350,8 +350,8 @@ export default function CulturalArtsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Cultural+center+construction+with+preservation+elements"
-                alt="Cultural center construction"
+                src="/cultural-center-construction-with-preservati.png"
+                alt="Cultural center construction with historic preservation and modern exhibition elements"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg"

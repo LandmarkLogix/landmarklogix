@@ -31,77 +31,77 @@ export default function MarketsPage() {
       title: "Sports & Athletics",
       icon: Trophy,
       description: "Professional venues, collegiate facilities, training centers, and community sports complexes",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+sports+stadium+architecture",
+      image: "/professional-stadium-interior-with-modern-seating-.png",
     },
     {
       id: "entertainment-leisure",
       title: "Entertainment & Leisure",
       icon: Music,
       description: "Theme parks, cinemas, family entertainment centers, zoos, and recreation facilities",
-      image: "/placeholder.svg?height=300&width=400&text=Entertainment+venue+with+modern+design",
+      image: "/concert-hall-architecture-with-advanced-acoustics-.png",
     },
     {
       id: "hospitality-tourism",
       title: "Hospitality & Tourism",
       icon: Hotel,
       description: "Luxury hotels, resorts, restaurants, conference centers, and tourism infrastructure",
-      image: "/placeholder.svg?height=300&width=400&text=Luxury+hotel+with+elegant+facade",
+      image: "/luxury-hotel-construction-with-modern-lobby-and-ho.png",
     },
     {
       id: "cultural-arts",
       title: "Cultural & Arts",
       icon: Palette,
       description: "Museums, performing arts centers, cultural heritage sites, and historic preservation projects",
-      image: "/placeholder.svg?height=300&width=400&text=Museum+with+classical+architecture",
+      image: "/modern-museum-architecture-with-contemporary-galle.png",
     },
     {
       id: "education-research",
       title: "Education & Research",
       icon: GraduationCap,
       description: "Universities, K-12 facilities, research centers, libraries, and innovation hubs",
-      image: "/placeholder.svg?height=300&width=400&text=University+campus+building+with+modern+design",
+      image: "/university-construction-with-modern-campus-buildin.png",
     },
     {
       id: "corporate-commercial",
       title: "Corporate & Commercial",
       icon: Briefcase,
       description: "Corporate headquarters, office campuses, retail centers, and mixed-use developments",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+corporate+headquarters+building",
+      image: "/commercial-construction-with-modern-office-buildin.png",
     },
     {
       id: "civic-government",
       title: "Civic & Government",
       icon: Landmark,
       description: "Federal, state, and local government facilities, justice centers, and public safety buildings",
-      image: "/placeholder.svg?height=300&width=400&text=Government+building+with+classical+columns",
+      image: "/government-building-construction-with-classical-.png",
     },
     {
       id: "residential-community",
       title: "Residential & Community",
       icon: Home,
       description: "High-end residential, estate development, luxury living, and community planning",
-      image: "/placeholder.svg?height=300&width=400&text=Luxury+residential+development+architecture",
+      image: "/luxury-residential-development-with-modern-arch.png",
     },
     {
       id: "healthcare-wellness",
       title: "Healthcare & Wellness",
       icon: Heart,
       description: "Hospitals, medical centers, senior living, research facilities, and wellness centers",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+hospital+building+with+healing+design",
+      image: "/modern-hospital-construction-with-healing-design.png",
     },
     {
       id: "industrial-specialized",
       title: "Industrial & Specialized",
       icon: Factory,
       description: "Manufacturing, energy facilities, specialized environments, and mission-critical operations",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+industrial+facility+architecture",
+      image: "/modern-industrial-facility-construction-with-a.png",
     },
     {
       id: "transportation-infrastructure",
       title: "Transportation & Infrastructure",
       icon: Plane,
       description: "Airports, train stations, bridges, ports, and multi-modal transportation hubs",
-      image: "/placeholder.svg?height=300&width=400&text=Modern+airport+terminal+architecture",
+      image: "/modern-airport-terminal-construction-with-large.png",
     },
   ]
 
@@ -114,11 +114,11 @@ export default function MarketsPage() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="bg-brand-golden/20 text-brand-golden border-brand-golden/30 font-medium mb-6">
+            <Badge className="bg-[#C5B783]/20 text-[#C5B783] border-[#C5B783]/30 font-medium mb-6">
               11 Specialized Markets
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-              Markets We Serve -<span className="text-brand-golden"> Building Landmarks Across Every Sector</span>
+              Markets We Serve -<span className="text-[#C5B783]"> Building Landmarks Across Every Sector</span>
             </h1>
             <p className="text-xl text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto">
               From cultural institutions to cutting-edge technology centers, Landmark Logix brings 20+ years of
@@ -127,7 +127,7 @@ export default function MarketsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-brand-golden hover:bg-brand-golden-dark text-brand-navy font-semibold">
+                <Button size="lg" className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold">
                   Discuss Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -136,7 +136,7 @@ export default function MarketsPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-brand-navy bg-transparent font-medium"
+                  className="border-white text-white hover:bg-white hover:text-[#00205B] bg-transparent font-medium"
                 >
                   Our Services
                 </Button>
@@ -150,8 +150,8 @@ export default function MarketsPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-brand-navy mb-4">Our Market Expertise</h2>
-            <p className="text-xl text-brand-navy-deep max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Our Market Expertise</h2>
+            <p className="text-xl text-[#000034] max-w-3xl mx-auto">
               Landmark projects exist across every sector of the built environment. Explore our specialized expertise in
               each market we serve.
             </p>
@@ -163,7 +163,7 @@ export default function MarketsPage() {
               return (
                 <Card
                   key={market.id}
-                  className="border-slate-200 hover:shadow-lg transition-all duration-300 hover:border-brand-golden/30 group"
+                  className="border-slate-200 hover:shadow-lg transition-all duration-300 hover:border-[#C5B783]/30 group"
                 >
                   <div className="relative overflow-hidden rounded-t-lg">
                     <Image
@@ -175,18 +175,18 @@ export default function MarketsPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-4 left-4">
-                      <div className="h-12 w-12 bg-brand-golden rounded-lg flex items-center justify-center">
+                      <div className="h-12 w-12 bg-[#C5B783] rounded-lg flex items-center justify-center">
                         <IconComponent className="h-6 w-6 text-white" />
                       </div>
                     </div>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-brand-navy text-xl">{market.title}</CardTitle>
-                    <CardDescription className="text-brand-navy-deep">{market.description}</CardDescription>
+                    <CardTitle className="text-[#00205B] text-xl">{market.title}</CardTitle>
+                    <CardDescription className="text-[#000034]">{market.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Link href={`/markets/${market.id}`}>
-                      <Button className="w-full bg-brand-navy hover:bg-brand-navy-deep text-white font-medium">
+                      <Button className="w-full bg-[#00205B] hover:bg-[#000034] text-white font-medium">
                         Explore {market.title}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
@@ -204,20 +204,20 @@ export default function MarketsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-brand-navy mb-6">Every Market, Every Landmark</h2>
-              <p className="text-lg text-brand-navy-deep mb-8 leading-relaxed">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-6">Every Market, Every Landmark</h2>
+              <p className="text-lg text-[#000034] mb-8 leading-relaxed">
                 At Landmark Logix, we understand that landmark projects exist across every sector of the built
                 environment. Whether you're developing a world-class museum, a cutting-edge research facility, or a
                 historic government building, our 20+ years of experience ensures your project achieves landmark status
                 and stands the test of time.
               </p>
-              <p className="text-lg text-brand-navy-deep mb-8 leading-relaxed">
+              <p className="text-lg text-[#000034] mb-8 leading-relaxed">
                 Each market presents unique challenges, opportunities, and requirements. Our specialized approach
                 ensures we deliver the expertise, stakeholder management, and quality standards that your specific
                 market demands.
               </p>
               <Link href="/contact">
-                <Button size="lg" className="bg-brand-golden hover:bg-brand-golden-dark text-brand-navy font-semibold">
+                <Button size="lg" className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold">
                   Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -225,8 +225,8 @@ export default function MarketsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Diverse+landmark+buildings+across+multiple+sectors"
-                alt="Landmark buildings across sectors"
+                src="/diverse-landmark-buildings-across-multiple-se.png"
+                alt="Diverse landmark buildings across multiple sectors showcasing architectural excellence and professional construction management"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -240,49 +240,49 @@ export default function MarketsPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-brand-navy mb-4">Why Market Expertise Matters</h2>
-            <p className="text-xl text-brand-navy-deep max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Why Market Expertise Matters</h2>
+            <p className="text-xl text-[#000034] max-w-3xl mx-auto">
               Every market has unique requirements that demand specialized knowledge and experience
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="h-16 w-16 bg-brand-golden/10 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Shield className="h-8 w-8 text-brand-golden" />
+              <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <Shield className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">Regulatory Knowledge</h3>
-              <p className="text-brand-navy-deep">
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Regulatory Knowledge</h3>
+              <p className="text-[#000034]">
                 Each market has unique codes, standards, and approval processes that require specialized expertise.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="h-16 w-16 bg-brand-golden/10 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-brand-golden" />
+              <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <Users className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">Stakeholder Understanding</h3>
-              <p className="text-brand-navy-deep">
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Stakeholder Understanding</h3>
+              <p className="text-[#000034]">
                 Different markets involve different community and user groups with varying needs and expectations.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="h-16 w-16 bg-brand-golden/10 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Target className="h-8 w-8 text-brand-golden" />
+              <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <Target className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">Technical Requirements</h3>
-              <p className="text-brand-navy-deep">
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Technical Requirements</h3>
+              <p className="text-[#000034]">
                 Specialized building systems and performance standards that vary significantly by market sector.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="h-16 w-16 bg-brand-golden/10 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <Clock className="h-8 w-8 text-brand-golden" />
+              <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <Clock className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">Project Lifecycle</h3>
-              <p className="text-brand-navy-deep">
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Project Lifecycle</h3>
+              <p className="text-[#000034]">
                 Varying timelines, funding sources, and delivery methods that require market-specific approaches.
               </p>
             </div>
@@ -291,7 +291,7 @@ export default function MarketsPage() {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-20 bg-brand-navy">
+      <section className="py-20 bg-[#00205B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
@@ -303,7 +303,7 @@ export default function MarketsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-brand-golden hover:bg-brand-golden-dark text-brand-navy font-semibold">
+                <Button size="lg" className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold">
                   Schedule Your Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -312,13 +312,13 @@ export default function MarketsPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-brand-navy bg-transparent font-medium"
+                  className="border-white text-white hover:bg-white hover:text-[#00205B] bg-transparent font-medium"
                 >
                   Our Services
                 </Button>
               </Link>
             </div>
-            <p className="text-brand-golden font-medium mt-6">"Every market deserves landmark-quality construction"</p>
+            <p className="text-[#C5B783] font-medium mt-6">"Every market deserves landmark-quality construction"</p>
           </div>
         </div>
       </section>

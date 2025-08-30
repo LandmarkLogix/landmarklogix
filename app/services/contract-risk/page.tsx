@@ -190,8 +190,8 @@ export default function ContractRiskPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=800&text=Contract+negotiation+and+risk+assessment+meeting"
-                alt="Contract and risk management"
+                src="/contract-negotiation-and-risk-assessment-mee.png"
+                alt="Contract negotiation and risk assessment meeting with professional consultants reviewing legal documents"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"

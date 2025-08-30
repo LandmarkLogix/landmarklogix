@@ -103,8 +103,8 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600&text=Sports+facility+construction+with+complex+coordination"
-                alt="Sports facility construction showing complex project coordination and management"
+                src="/construction-management-professionals-reviewing-.png"
+                alt="Professional construction management team reviewing blueprints and coordinating on complex commercial project site"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -279,8 +279,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Construction+management+professionals+coordinating+complex+project"
-                alt="Construction management professionals coordinating on complex commercial project site"
+                src="/construction-site-management-with-cranes-and-mo.png"
+                alt="Construction site management showing modern building construction with cranes and professional oversight"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg"
