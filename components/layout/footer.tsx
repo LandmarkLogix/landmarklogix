@@ -5,8 +5,9 @@ export function Footer() {
   return (
     <footer className="bg-[#00205B] text-white py-8 sm:py-12" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-          <div className="sm:col-span-2 md:col-span-1">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Column 1 - Company Info */}
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-4 sm:mb-6">
               <Image
                 src="/images/landmark-logix-logo.png"
@@ -16,22 +17,20 @@ export function Footer() {
                 className="h-10 sm:h-12 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-slate-300 mb-4 text-sm sm:text-base">Building landmarks that stand the test of time</p>
-            <p className="text-slate-400 text-xs sm:text-sm mb-4">© 2024 Landmark Logix. All rights reserved.</p>
+            <p className="text-slate-300 mb-4 text-sm sm:text-base">
+              Expert Construction Owner's Representative Services
+            </p>
+
+            <div className="space-y-2 mb-4 text-sm sm:text-base">
+              <p className="text-slate-300">
+                <span className="text-slate-400">Phone:</span> (123) 456-7890
+              </p>
+              <p className="text-slate-300">
+                <span className="text-slate-400">Email:</span> info@landmarklogix.com
+              </p>
+            </div>
 
             <div className="flex space-x-4">
-              <Link
-                href="https://www.facebook.com/profile.php?id=61558175892797"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-300 hover:text-[#C5B783] transition-colors duration-200"
-                aria-label="Follow us on Facebook"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-                </svg>
-              </Link>
-
               <Link
                 href="https://www.linkedin.com/company/landmarklogix/"
                 target="_blank"
@@ -45,6 +44,22 @@ export function Footer() {
               </Link>
 
               <Link
+                href="https://www.facebook.com/profile.php?id=61558175892797"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-300 hover:text-[#C5B783] transition-colors duration-200"
+                aria-label="Follow us on Facebook"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="12" fill="currentColor" />
+                  <path
+                    d="M15.5 8.5h-2v-1.5c0-.5.5-1 1-1h1V4h-2c-2 0-3.5 1.5-3.5 3.5V8.5H8v2h2V18h3v-7.5h2l.5-2z"
+                    fill="#00205B"
+                  />
+                </svg>
+              </Link>
+
+              <Link
                 href="https://www.instagram.com/landmarklogix"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -52,7 +67,16 @@ export function Footer() {
                 aria-label="Follow us on Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.644.069-4.849.069-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.073-1.689-.073-4.948 0-3.204.013-3.663.072-4.947.196-4.354 2.617-6.78 6.979-6.98 1.281-.059 1.689-.073 4.948-.073zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                  {/* Rounded square border */}
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="currentColor" stroke="none" />
+                  {/* Inner white area */}
+                  <rect x="4" y="4" width="16" height="16" rx="3" ry="3" fill="#00205B" />
+                  {/* Camera lens circle */}
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2" />
+                  {/* Inner lens circle */}
+                  <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" strokeWidth="1" />
+                  {/* Viewfinder dot */}
+                  <circle cx="17" cy="7" r="1.2" fill="currentColor" />
                 </svg>
               </Link>
 
@@ -70,31 +94,97 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Column 2 - Quick Links */}
+          <nav aria-labelledby="footer-links">
+            <h4 id="footer-links" className="font-semibold mb-3 sm:mb-4 text-[#C5B783] text-sm sm:text-base">
+              Quick Links
+            </h4>
+            <ul className="space-y-1 sm:space-y-2 text-slate-300 text-sm sm:text-base">
+              <li>
+                <Link href="/about" className="hover:text-[#C5B783] transition-colors duration-200">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-[#C5B783] transition-colors duration-200">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/markets" className="hover:text-[#C5B783] transition-colors duration-200">
+                  Markets
+                </Link>
+              </li>
+              <li>
+                <Link href="/why-choose-us" className="hover:text-[#C5B783] transition-colors duration-200">
+                  Why Choose Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-[#C5B783] transition-colors duration-200">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Column 3 - Markets Served */}
+          <nav aria-labelledby="footer-markets">
+            <h4 id="footer-markets" className="font-semibold mb-3 sm:mb-4 text-[#C5B783] text-sm sm:text-base">
+              Markets Served
+            </h4>
+            <ul className="space-y-1 sm:space-y-2 text-slate-300 text-sm sm:text-base">
+              <li>Sports & Athletics</li>
+              <li>Entertainment & Leisure</li>
+              <li>Hospitality & Tourism</li>
+              <li>Cultural & Arts</li>
+              <li>Education & Research</li>
+              <li>Corporate & Commercial</li>
+            </ul>
+          </nav>
+
+          {/* Column 4 - Services */}
           <nav aria-labelledby="footer-services">
             <h4 id="footer-services" className="font-semibold mb-3 sm:mb-4 text-[#C5B783] text-sm sm:text-base">
               Services
             </h4>
             <ul className="space-y-1 sm:space-y-2 text-slate-300 text-sm sm:text-base">
-              <li>Owner's Representative</li>
-              <li>Project Management</li>
-              <li>Historic Preservation</li>
-              <li>Regulatory Navigation</li>
-              <li>Quality Assurance</li>
+              <li>Pre-Construction Planning</li>
+              <li>Construction Management</li>
+              <li>Quality Control</li>
+              <li>Project Closeout</li>
+              <li>Risk Management</li>
+              <li>Schedule Monitoring</li>
             </ul>
           </nav>
+        </div>
 
-          <nav aria-labelledby="footer-markets">
-            <h4 id="footer-markets" className="font-semibold mb-3 sm:mb-4 text-[#C5B783] text-sm sm:text-base">
-              Markets
-            </h4>
-            <ul className="space-y-1 sm:space-y-2 text-slate-300 text-sm sm:text-base">
-              <li>Museums & Cultural Centers</li>
-              <li>Civic Buildings</li>
-              <li>Educational Institutions</li>
-              <li>Religious Buildings</li>
-              <li>Historic Renovations</li>
-            </ul>
-          </nav>
+        <div className="border-t border-slate-700 mt-8 pt-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <div className="text-center sm:text-left">
+              <p className="text-slate-400 text-xs sm:text-sm">© 2025 Landmark Logix. All rights reserved.</p>
+              <p className="text-slate-400 text-xs sm:text-sm mt-1">
+                Nationwide construction owner's representative services
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center sm:justify-end space-x-4 text-xs sm:text-sm">
+              <Link
+                href="/privacy-policy"
+                className="text-slate-400 hover:text-[#C5B783] transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms-of-service"
+                className="text-slate-400 hover:text-[#C5B783] transition-colors duration-200"
+              >
+                Terms of Service
+              </Link>
+              <Link href="/site-map" className="text-slate-400 hover:text-[#C5B783] transition-colors duration-200">
+                Site Map
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
