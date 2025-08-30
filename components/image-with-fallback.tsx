@@ -27,14 +27,14 @@ export function ImageWithFallback({
   if (imageError) {
     return (
       <div
-        className={`bg-slate-100 flex items-center justify-center ${className}`}
+        className={`bg-brand-golden/5 flex items-center justify-center ${className}`}
         style={{ width, height }}
         role="img"
         aria-label={alt}
       >
         <div className="text-center">
-          <ImageIcon className="h-8 w-8 text-slate-400 mx-auto mb-2" />
-          <p className="text-sm text-slate-500">Image unavailable</p>
+          <ImageIcon className="h-8 w-8 text-brand-golden/60 mx-auto mb-2" />
+          <p className="text-sm text-brand-navy-deep/60">Image unavailable</p>
         </div>
       </div>
     )
@@ -44,10 +44,10 @@ export function ImageWithFallback({
     <div className="relative">
       {isLoading && (
         <div
-          className={`absolute inset-0 bg-slate-100 flex items-center justify-center ${className}`}
+          className={`absolute inset-0 bg-brand-golden/5 flex items-center justify-center ${className}`}
           style={{ width, height }}
         >
-          <div className="animate-pulse bg-slate-200 w-full h-full rounded"></div>
+          <div className="animate-pulse bg-brand-golden/10 w-full h-full rounded"></div>
         </div>
       )}
       <Image

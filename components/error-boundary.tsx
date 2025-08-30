@@ -38,11 +38,11 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
 
       return (
         <div className="flex flex-col items-center justify-center min-h-[400px] p-8 text-center">
-          <div className="bg-red-50 rounded-full p-4 mb-6">
-            <AlertTriangle className="h-8 w-8 text-red-500" />
+          <div className="bg-brand-golden/10 rounded-full p-4 mb-6">
+            <AlertTriangle className="h-8 w-8 text-brand-golden" />
           </div>
-          <h2 className="text-2xl font-semibold text-slate-900 mb-2">Something went wrong</h2>
-          <p className="text-slate-600 mb-6 max-w-md">
+          <h2 className="text-2xl font-semibold text-brand-navy mb-2">Something went wrong</h2>
+          <p className="text-brand-navy-deep mb-6 max-w-md">
             We encountered an unexpected error. Please try refreshing the page or contact support if the problem
             persists.
           </p>
@@ -51,7 +51,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
               this.setState({ hasError: false, error: undefined })
               window.location.reload()
             }}
-            className="bg-[#00205B] hover:bg-[#000034] text-white"
+            className="bg-brand-navy hover:bg-brand-navy-deep text-white"
           >
             <RefreshCw className="mr-2 h-4 w-4" />
             Try Again

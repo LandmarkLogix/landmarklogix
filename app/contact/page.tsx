@@ -24,10 +24,11 @@ export default function ContactPage() {
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6">
               Let's Discuss Your
-              <span className="text-[#C5B783]"> Landmark Project</span>
+              <span className="text-[#C5B783]"> Complex Construction Project</span>
             </h1>
             <p className="text-xl text-slate-200 leading-relaxed mb-8 max-w-3xl mx-auto">
-              Ready to ensure your building stands the test of time? Contact us for a consultation about your landmark
+              Ready to ensure your complex construction project delivers exceptional results? Contact us for a
+              consultation about your sports facility, entertainment venue, hospitality development, or commercial
               project. We're here to protect your interests and guide you through every step of the process.
             </p>
             <div className="flex items-center justify-center space-x-6 text-sm text-slate-300">
@@ -56,10 +57,10 @@ export default function ContactPage() {
             <div className="lg:col-span-2">
               <Card className="border-slate-200 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-[#00205B]">Request Your Consultation</CardTitle>
+                  <CardTitle className="text-2xl text-[#00205B]">Request Your Project Consultation</CardTitle>
                   <CardDescription className="text-lg">
-                    Tell us about your landmark project and we'll provide expert guidance tailored to your specific
-                    needs.
+                    Tell us about your complex construction project and we'll provide expert guidance tailored to your
+                    specific operational and performance requirements.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -113,22 +114,31 @@ export default function ContactPage() {
                           <SelectValue placeholder="Select project type" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="museum">Museum/Cultural Institution</SelectItem>
-                          <SelectItem value="historic">Historic Building Renovation</SelectItem>
-                          <SelectItem value="civic">Civic Building (courthouse, library, city hall)</SelectItem>
-                          <SelectItem value="religious">Religious Institution</SelectItem>
-                          <SelectItem value="educational">Educational Campus Building</SelectItem>
+                          <SelectItem value="sports">Sports & Athletics Facility</SelectItem>
+                          <SelectItem value="entertainment">Entertainment & Leisure Venue</SelectItem>
+                          <SelectItem value="hospitality">Hospitality & Tourism Development</SelectItem>
+                          <SelectItem value="cultural">Cultural & Arts Institution</SelectItem>
+                          <SelectItem value="education">Education & Research Facility</SelectItem>
+                          <SelectItem value="corporate">Corporate & Commercial Building</SelectItem>
                           <SelectItem value="mixed-use">Mixed-Use Development</SelectItem>
-                          <SelectItem value="other">Other Landmark Project</SelectItem>
+                          <SelectItem value="other">Other Complex Project</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Location</label>
-                      <Input
-                        placeholder="City, State"
-                        className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
-                      />
+                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Budget Range</label>
+                      <Select>
+                        <SelectTrigger className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]">
+                          <SelectValue placeholder="Select budget range" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="10-25m">$10M - $25M</SelectItem>
+                          <SelectItem value="25-50m">$25M - $50M</SelectItem>
+                          <SelectItem value="50-100m">$50M - $100M</SelectItem>
+                          <SelectItem value="100m-plus">$100M+</SelectItem>
+                          <SelectItem value="tbd">To Be Determined</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
                   </div>
 
@@ -149,16 +159,17 @@ export default function ContactPage() {
                       </Select>
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Timeline</label>
+                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Timeline</label>
                       <Select>
                         <SelectTrigger className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]">
                           <SelectValue placeholder="Select timeline" />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="immediate">Immediate (within 30 days)</SelectItem>
-                          <SelectItem value="1-3-months">1-3 months</SelectItem>
-                          <SelectItem value="3-6-months">3-6 months</SelectItem>
-                          <SelectItem value="6-plus-months">6+ months</SelectItem>
+                          <SelectItem value="1-6-months">1-6 months</SelectItem>
+                          <SelectItem value="6-12-months">6-12 months</SelectItem>
+                          <SelectItem value="12-plus-months">12+ months</SelectItem>
+                          <SelectItem value="multi-year">Multi-year development</SelectItem>
                           <SelectItem value="exploring">Just exploring options</SelectItem>
                         </SelectContent>
                       </Select>
@@ -168,14 +179,14 @@ export default function ContactPage() {
                   <div>
                     <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Description</label>
                     <Textarea
-                      placeholder="Tell us about your landmark project and how we can help. Include any specific challenges, goals, or requirements you have."
+                      placeholder="Tell us about your complex construction project and how we can help. Include any specific operational requirements, performance goals, stakeholder considerations, or challenges you're facing."
                       rows={6}
                       className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
                     />
                   </div>
 
                   <Button className="w-full bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold text-lg py-3">
-                    Request Consultation
+                    Schedule Project Consultation
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
 
@@ -240,7 +251,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#00205B] mb-2">Service Territory</h4>
-                    <p className="text-slate-600">Serving landmark projects across the United States</p>
+                    <p className="text-slate-600">Serving complex construction projects across the United States</p>
                   </div>
                 </CardContent>
               </Card>
@@ -270,8 +281,8 @@ export default function ContactPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">What to Expect</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              When you contact Landmark Logix, you're taking the first step toward ensuring your landmark project's
-              success
+              When you contact Landmark Logix, you're taking the first step toward ensuring your complex construction
+              project's success and operational excellence
             </p>
           </div>
 
@@ -280,10 +291,10 @@ export default function ContactPage() {
               <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Free Initial Consultation</h3>
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Free Strategic Consultation</h3>
               <p className="text-slate-600">
-                We'll discuss your project needs at no cost and provide initial insights into your landmark building
-                project.
+                We'll discuss your project needs at no cost and provide initial insights into optimizing your complex
+                construction project for operational success.
               </p>
             </div>
 
@@ -291,9 +302,10 @@ export default function ContactPage() {
               <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Expert Assessment</h3>
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Commercial Expertise</h3>
               <p className="text-slate-600">
-                Benefit from 20+ years of landmark project experience and specialized knowledge of regulations.
+                Benefit from 20+ years of experience in sports facilities, entertainment venues, hospitality
+                developments, and complex commercial construction projects.
               </p>
             </div>
 
@@ -301,10 +313,10 @@ export default function ContactPage() {
               <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Tailored Solutions</h3>
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Performance-Focused Solutions</h3>
               <p className="text-slate-600">
-                Every landmark project is unique. We'll develop a customized approach that fits your specific needs and
-                goals.
+                Every complex project is unique. We'll develop a customized approach that optimizes operational
+                performance, stakeholder satisfaction, and long-term ROI.
               </p>
             </div>
 
@@ -312,10 +324,10 @@ export default function ContactPage() {
               <div className="h-16 w-16 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="h-8 w-8 text-[#C5B783]" />
               </div>
-              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Clear Next Steps</h3>
+              <h3 className="text-xl font-semibold text-[#00205B] mb-4">Clear Implementation Plan</h3>
               <p className="text-slate-600">
-                We'll outline exactly how we can help and provide a clear roadmap for moving your project forward
-                successfully.
+                We'll outline exactly how we can help deliver exceptional results and provide a clear roadmap for moving
+                your project forward successfully.
               </p>
             </div>
           </div>
@@ -328,7 +340,8 @@ export default function ContactPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Best Times to Contact Us</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              We add the most value when involved early, but we can help at any stage of your landmark project
+              We add the most value when involved early, but we can help optimize performance and mitigate risks at any
+              stage of your complex construction project
             </p>
           </div>
 
@@ -338,9 +351,10 @@ export default function ContactPage() {
                 <div className="h-12 w-12 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-lg font-bold text-[#C5B783]">1</span>
                 </div>
-                <CardTitle className="text-[#00205B]">Planning Stage</CardTitle>
+                <CardTitle className="text-[#00205B]">Strategic Planning</CardTitle>
                 <CardDescription>
-                  We add the most value when involved early in the planning and feasibility phase of your project.
+                  We add the most value when involved early in the planning and feasibility phase, optimizing for
+                  operational excellence and ROI from the start.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -352,7 +366,8 @@ export default function ContactPage() {
                 </div>
                 <CardTitle className="text-[#00205B]">Design Phase</CardTitle>
                 <CardDescription>
-                  Help select the right team and manage the design process to ensure landmark-quality results.
+                  Help select the right team and manage the design process to ensure high-performance facilities that
+                  meet operational and revenue requirements.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -362,9 +377,10 @@ export default function ContactPage() {
                 <div className="h-12 w-12 bg-[#C5B783]/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-lg font-bold text-[#C5B783]">3</span>
                 </div>
-                <CardTitle className="text-[#00205B]">Before Construction</CardTitle>
+                <CardTitle className="text-[#00205B]">Pre-Construction</CardTitle>
                 <CardDescription>
-                  Ensure proper preparation and risk management before construction begins on your landmark building.
+                  Ensure proper preparation and comprehensive risk management before construction begins on your complex
+                  commercial project.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -376,7 +392,8 @@ export default function ContactPage() {
                 </div>
                 <CardTitle className="text-[#00205B]">During Construction</CardTitle>
                 <CardDescription>
-                  Provide oversight and quality control to ensure your landmark meets the highest standards.
+                  Provide expert oversight and quality control to ensure your facility meets the highest performance
+                  standards and operational requirements.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -389,11 +406,11 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              "Every landmark deserves expert representation"
+              "Delivering excellence in complex construction projects"
             </h2>
             <p className="text-xl text-slate-200 mb-8">
               Don't let your important project become someone else's learning experience. Contact Landmark Logix today
-              and ensure your building becomes a lasting legacy.
+              and ensure your facility delivers exceptional operational performance and long-term success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold">
@@ -409,7 +426,7 @@ export default function ContactPage() {
               </Button>
             </div>
             <p className="text-[#C5B783] font-medium mt-6">
-              "Contact Landmark Logix today and ensure your building becomes a lasting legacy"
+              "Contact Landmark Logix today and ensure exceptional results for your complex project"
             </p>
           </div>
         </div>

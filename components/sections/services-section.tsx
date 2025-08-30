@@ -41,11 +41,11 @@ export function ServicesSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2
             id="services-heading"
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00205B] mb-4 text-balance"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-navy mb-4 text-balance"
           >
             Comprehensive Owner's Representative Services
           </h2>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto text-pretty">
+          <p className="text-lg sm:text-xl text-brand-navy-deep max-w-3xl mx-auto text-pretty">
             From project inception to completion, we serve as your advocate, ensuring every aspect of your landmark
             building project exceeds expectations.
           </p>

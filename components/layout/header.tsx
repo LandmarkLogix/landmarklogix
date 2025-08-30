@@ -35,10 +35,10 @@ export function Header() {
             <li role="none">
               <Link
                 href="/about"
-                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
                   isActivePage("/about")
-                    ? "text-[#00205B] border-[#00205B]"
-                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                    ? "text-brand-navy border-brand-navy"
+                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
                 }`}
                 role="menuitem"
               >
@@ -48,10 +48,10 @@ export function Header() {
             <li role="none">
               <Link
                 href="/services"
-                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
                   isActivePage("/services")
-                    ? "text-[#00205B] border-[#00205B]"
-                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                    ? "text-brand-navy border-brand-navy"
+                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
                 }`}
                 role="menuitem"
               >
@@ -61,10 +61,10 @@ export function Header() {
             <li role="none">
               <Link
                 href="/markets"
-                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
                   isActivePage("/markets")
-                    ? "text-[#00205B] border-[#00205B]"
-                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                    ? "text-brand-navy border-brand-navy"
+                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
                 }`}
                 role="menuitem"
               >
@@ -74,10 +74,10 @@ export function Header() {
             <li role="none">
               <Link
                 href="/why-choose-us"
-                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
                   isActivePage("/why-choose-us")
-                    ? "text-[#00205B] border-[#00205B]"
-                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                    ? "text-brand-navy border-brand-navy"
+                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
                 }`}
                 role="menuitem"
               >
@@ -87,10 +87,10 @@ export function Header() {
             <li role="none">
               <Link
                 href="/contact"
-                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
                   isActivePage("/contact")
-                    ? "text-[#00205B] border-[#00205B]"
-                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                    ? "text-brand-navy border-brand-navy"
+                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
                 }`}
                 role="menuitem"
               >
@@ -101,14 +101,14 @@ export function Header() {
 
           <div className="flex items-center space-x-4">
             <Link href="/contact" aria-label="Schedule consultation - Contact us" className="hidden sm:block">
-              <Button className="bg-[#00205B] hover:bg-[#000034] text-white font-medium min-h-[44px] min-w-[44px] px-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 transition-colors duration-200">
+              <Button className="bg-brand-navy hover:bg-brand-navy-deep text-white font-medium min-h-[44px] min-w-[44px] px-4 text-sm focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 transition-colors duration-200">
                 Schedule Consultation
               </Button>
             </Link>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 rounded-md text-slate-600 hover:text-[#00205B] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 transition-colors duration-200"
+              className="lg:hidden p-2 rounded-md text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 transition-colors duration-200"
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
               aria-label="Toggle navigation menu"
@@ -131,8 +131,8 @@ export function Header() {
                 href="/about"
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActivePage("/about")
-                    ? "text-[#00205B] bg-slate-50"
-                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                    ? "text-brand-navy bg-slate-50"
+                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -142,8 +142,8 @@ export function Header() {
                 href="/services"
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActivePage("/services")
-                    ? "text-[#00205B] bg-slate-50"
-                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                    ? "text-brand-navy bg-slate-50"
+                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -153,8 +153,8 @@ export function Header() {
                 href="/markets"
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActivePage("/markets")
-                    ? "text-[#00205B] bg-slate-50"
-                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                    ? "text-brand-navy bg-slate-50"
+                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -164,8 +164,8 @@ export function Header() {
                 href="/why-choose-us"
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActivePage("/why-choose-us")
-                    ? "text-[#00205B] bg-slate-50"
-                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                    ? "text-brand-navy bg-slate-50"
+                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -175,8 +175,8 @@ export function Header() {
                 href="/contact"
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                   isActivePage("/contact")
-                    ? "text-[#00205B] bg-slate-50"
-                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                    ? "text-brand-navy bg-slate-50"
+                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -184,7 +184,7 @@ export function Header() {
               </Link>
               <div className="pt-2">
                 <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full bg-[#00205B] hover:bg-[#000034] text-white font-medium py-2 px-4 text-base focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 transition-colors duration-200">
+                  <Button className="w-full bg-brand-navy hover:bg-brand-navy-deep text-white font-medium py-2 px-4 text-base focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 transition-colors duration-200">
                     Schedule Consultation
                   </Button>
                 </Link>

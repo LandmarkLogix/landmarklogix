@@ -9,7 +9,7 @@ interface MarketCardProps {
 
 export function MarketCard({ imageSrc, imageAlt, title, description }: MarketCardProps) {
   return (
-    <article className="bg-white rounded-lg p-6 sm:p-8 shadow-sm border border-slate-200 hover:border-[#C5B783]/30 transition-colors h-full">
+    <article className="bg-white rounded-lg p-6 sm:p-8 shadow-sm border border-slate-200 hover:border-brand-golden/30 transition-colors h-full">
       <ImageWithFallback
         src={imageSrc || "/placeholder.svg"}
         alt={imageAlt}
@@ -17,8 +17,8 @@ export function MarketCard({ imageSrc, imageAlt, title, description }: MarketCar
         height={200}
         className="rounded-lg mb-4 sm:mb-6 w-full object-cover aspect-[3/2]"
       />
-      <h3 className="text-lg sm:text-xl font-semibold text-[#00205B] mb-2 sm:mb-3">{title}</h3>
-      <p className="text-slate-600 text-sm sm:text-base">{description}</p>
+      <h3 className="text-lg sm:text-xl font-semibold text-brand-navy mb-2 sm:mb-3">{title}</h3>
+      <p className="text-brand-navy-deep text-sm sm:text-base">{description}</p>
     </article>
   )
 }

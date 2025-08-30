@@ -107,7 +107,7 @@ export default function WhyChooseUsPage() {
       <main className="min-h-screen">
         <ErrorBoundary>
           {/* Hero Section */}
-          <section className="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-[#00205B] to-[#003875] text-white overflow-hidden">
+          <section className="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white overflow-hidden">
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-4xl mx-auto text-center">

@@ -2,46 +2,49 @@ import { MarketCard } from "@/components/cards/market-card"
 
 const markets = [
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Museum+building+with+classical+columns",
-    imageAlt:
-      "Museum building featuring classical columns and grand entrance, showcasing cultural architecture expertise",
-    title: "Museums & Cultural Centers",
-    description: "Preserving and presenting culture through thoughtfully designed spaces that inspire and educate.",
-  },
-  {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Civic+building+with+government+architecture",
-    imageAlt:
-      "Civic government building with formal architecture representing democratic institutions and public service",
-    title: "Civic Buildings",
+    imageSrc: "/placeholder.svg?height=200&width=300&text=Stadium+construction+with+modern+architecture",
+    imageAlt: "Modern stadium under construction showcasing complex steel framework and sports facility expertise",
+    title: "Sports & Athletics",
     description:
-      "Government facilities that embody democratic values and serve communities with dignity and accessibility.",
+      "Stadiums, arenas, training facilities, and sports complexes requiring expert coordination of fan experience, safety systems, and operational efficiency.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Historic+building+renovation+with+scaffolding",
+    imageSrc: "/placeholder.svg?height=200&width=300&text=Entertainment+venue+theater+construction",
     imageAlt:
-      "Historic building under renovation with scaffolding, demonstrating preservation and restoration expertise",
-    title: "Historic Renovations",
+      "Entertainment venue and theater construction with advanced technical systems and patron experience design",
+    title: "Entertainment & Leisure",
     description:
-      "Breathing new life into historic structures while preserving their architectural integrity and heritage.",
+      "Theaters, concert venues, entertainment complexes, and recreational facilities emphasizing patron experience and complex technical systems integration.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Educational+institution+campus+building",
+    imageSrc: "/placeholder.svg?height=200&width=300&text=Hotel+resort+construction+hospitality",
     imageAlt:
-      "Educational institution campus building with modern academic architecture fostering learning environments",
-    title: "Educational Institutions",
-    description: "Learning environments that inspire academic excellence and foster community engagement.",
+      "Hotel and resort construction showcasing hospitality design focused on guest experience and operational efficiency",
+    title: "Hospitality & Tourism",
+    description:
+      "Hotels, resorts, conference centers, and destination facilities optimizing guest experience, operational efficiency, and revenue potential.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Religious+building+with+traditional+architecture",
-    imageAlt: "Religious building with traditional sacred architecture serving faith communities",
-    title: "Religious Buildings",
-    description: "Sacred spaces that honor tradition while meeting the evolving needs of faith communities.",
+    imageSrc: "/placeholder.svg?height=200&width=300&text=Museum+cultural+center+modern+design",
+    imageAlt:
+      "Museum and cultural center with modern design balancing heritage preservation with contemporary functionality",
+    title: "Cultural & Arts",
+    description:
+      "Museums, galleries, performing arts centers, and cultural institutions balancing heritage preservation with modern functionality.",
   },
   {
-    imageSrc: "/placeholder.svg?height=200&width=300&text=Public+facility+community+center",
-    imageAlt: "Public facility community center designed for diverse populations and social engagement",
-    title: "Public Facilities",
-    description: "Community-centered buildings that serve diverse populations and strengthen social bonds.",
+    imageSrc: "/placeholder.svg?height=200&width=300&text=University+campus+educational+facility",
+    imageAlt: "University campus and educational facility construction creating inspiring learning environments",
+    title: "Education & Research",
+    description:
+      "Universities, schools, laboratories, and learning facilities creating inspiring environments that support academic and research excellence.",
+  },
+  {
+    imageSrc: "/placeholder.svg?height=200&width=300&text=Corporate+office+commercial+building",
+    imageAlt: "Corporate office and commercial building construction focused on efficiency and tenant satisfaction",
+    title: "Corporate & Commercial",
+    description:
+      "Office buildings, retail spaces, mixed-use developments focused on maximizing ROI, efficiency, and tenant satisfaction.",
   },
 ]
 
@@ -52,13 +55,13 @@ export function MarketsSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2
             id="markets-heading"
-            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#00205B] mb-4 text-balance"
+            className="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-navy mb-4 text-balance"
           >
-            Our Landmark Markets
+            Our Specialized Markets
           </h2>
-          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto text-pretty">
-            We focus exclusively on public-facing buildings that serve as community anchors and architectural treasures
-            for generations to come.
+          <p className="text-lg sm:text-xl text-brand-navy-deep max-w-3xl mx-auto text-pretty">
+            We excel in complex construction projects that require expert coordination, stakeholder alignment, and
+            operational excellence across diverse commercial sectors.
           </p>
         </div>
 

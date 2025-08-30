@@ -16,14 +16,16 @@
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
+    /* Updated primary colors to use brand navy blue */
+    --primary: 220 100% 18%; /* Navy Blue #00205B */
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    /* Updated accent colors to use brand golden */
+    --accent: 45 25% 75%; /* Golden #C5B783 */
+    --accent-foreground: 220 100% 18%; /* Navy Blue for text on golden */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 89.8%;
@@ -43,6 +45,12 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Added custom brand color variables */
+    --brand-navy: 220 100% 18%; /* #00205B */
+    --brand-golden: 45 25% 75%; /* #C5B783 */
+    --brand-golden-dark: 45 25% 65%; /* #B5A67B */
+    --brand-navy-deep: 240 100% 10%; /* #000034 */
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -51,13 +59,14 @@
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    /* Updated dark mode primary to use brand colors */
+    --primary: 45 25% 75%; /* Golden for dark mode */
+    --primary-foreground: 220 100% 18%; /* Navy text on golden */
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
+    --accent: 220 100% 18%; /* Navy for dark mode accent */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -77,6 +86,12 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand colors remain consistent in dark mode */
+    --brand-navy: 220 100% 18%; /* #00205B */
+    --brand-golden: 45 25% 75%; /* #C5B783 */
+    --brand-golden-dark: 45 25% 65%; /* #B5A67B */
+    --brand-navy-deep: 240 100% 10%; /* #000034 */
   }
 }
 
@@ -86,5 +101,51 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom brand color utility classes */
+@layer utilities {
+  .text-brand-navy {
+    color: #00205b;
+  }
+  .text-brand-golden {
+    color: #c5b783;
+  }
+  .text-brand-golden-dark {
+    color: #b5a67b;
+  }
+  .text-brand-navy-deep {
+    color: #000034;
+  }
+  .bg-brand-navy {
+    background-color: #00205b;
+  }
+  .bg-brand-golden {
+    background-color: #c5b783;
+  }
+  .bg-brand-golden-dark {
+    background-color: #b5a67b;
+  }
+  .bg-brand-navy-deep {
+    background-color: #000034;
+  }
+  .border-brand-navy {
+    border-color: #00205b;
+  }
+  .border-brand-golden {
+    border-color: #c5b783;
+  }
+  .hover\:text-brand-golden:hover {
+    color: #c5b783;
+  }
+  .hover\:text-brand-golden-dark:hover {
+    color: #b5a67b;
+  }
+  .hover\:bg-brand-golden:hover {
+    background-color: #c5b783;
+  }
+  .hover\:bg-brand-golden-dark:hover {
+    background-color: #b5a67b;
   }
 }

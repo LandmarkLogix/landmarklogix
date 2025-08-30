@@ -9,12 +9,12 @@ interface FeatureItemProps {
 export function FeatureItem({ icon: Icon, title, description }: FeatureItemProps) {
   return (
     <div className="flex items-start space-x-4">
-      <div className="bg-[#C5B783]/10 rounded-full p-3 flex-shrink-0" aria-hidden="true">
-        <Icon className="h-6 w-6 text-[#C5B783]" />
+      <div className="bg-brand-golden/10 rounded-full p-3 flex-shrink-0" aria-hidden="true">
+        <Icon className="h-6 w-6 text-brand-golden" />
       </div>
       <div>
-        <h3 className="text-lg sm:text-xl font-semibold text-[#00205B] mb-2">{title}</h3>
-        <p className="text-slate-600 text-sm sm:text-base">{description}</p>
+        <h3 className="text-lg sm:text-xl font-semibold text-brand-navy mb-2">{title}</h3>
+        <p className="text-brand-navy-deep text-sm sm:text-base">{description}</p>
       </div>
     </div>
   )
