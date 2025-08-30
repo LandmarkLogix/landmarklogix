@@ -10,14 +10,13 @@ export const metadata: Metadata = {
     template: "%s | Landmark Logix",
   },
   description:
-    "Expert owner's representative services for public-facing landmark buildings across the East Coast. 20+ years of excellence in historic preservation, civic architecture, and community-centered construction projects.",
+    "Expert owner's representative services for public-facing landmark buildings. 20+ years of excellence in historic preservation, civic architecture, and community-centered construction projects.",
   keywords: [
     "owner's representative",
     "landmark buildings",
     "historic preservation",
     "civic architecture",
     "construction management",
-    "East Coast",
     "public buildings",
   ],
   authors: [{ name: "Landmark Logix" }],

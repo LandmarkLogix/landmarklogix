@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
+import { Header } from "@/components/layout/header"
+import { Footer } from "@/components/layout/footer"
 
 export default function ServicesPage() {
   const serviceGroups = [
@@ -60,43 +62,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center">
-              <Link href="/">
-                <Image
-                  src="/images/landmark-logix-logo.png"
-                  alt="Landmark Logix"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto cursor-pointer"
-                />
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link href="/about" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                About
-              </Link>
-              <Link href="/services" className="text-[#00205B] font-semibold">
-                Services
-              </Link>
-              <Link href="/markets" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Markets
-              </Link>
-              <Link href="/why-choose-us" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Why Choose Us
-              </Link>
-              <Link href="/contact" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Contact
-              </Link>
-            </div>
-            <Link href="/contact">
-              <Button className="bg-[#00205B] hover:bg-[#000034] text-white font-medium">Get Consultation</Button>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-20 lg:py-28">
@@ -411,108 +377,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#000034] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/images/landmark-logix-logo.png"
-                  alt="Landmark Logix"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto brightness-0 invert"
-                />
-              </div>
-              <p className="text-slate-300 mb-4">Building landmarks that stand the test of time</p>
-              <p className="text-slate-400 text-sm">© 2024 Landmark Logix. All rights reserved.</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Service Groups</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>
-                  <Link href="/services/strategic-planning" className="hover:text-[#C5B783] transition-colors">
-                    Strategic Planning
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/procurement-financial" className="hover:text-[#C5B783] transition-colors">
-                    Procurement & Financial
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/contract-risk" className="hover:text-[#C5B783] transition-colors">
-                    Contract & Risk
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/design-regulatory" className="hover:text-[#C5B783] transition-colors">
-                    Design & Regulatory
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">More Services</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>
-                  <Link href="/services/construction-quality" className="hover:text-[#C5B783] transition-colors">
-                    Construction & Quality
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services/technology-transition" className="hover:text-[#C5B783] transition-colors">
-                    Technology & Transition
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services" className="hover:text-[#C5B783] transition-colors">
-                    All Services
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-[#C5B783] transition-colors">
-                    Get Consultation
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Quick Links</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>
-                  <Link href="/" className="hover:text-[#C5B783] transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-[#C5B783] transition-colors">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/markets" className="hover:text-[#C5B783] transition-colors">
-                    Markets
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/why-choose-us" className="hover:text-[#C5B783] transition-colors">
-                    Why Choose Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="hover:text-[#C5B783] transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     "20+ years of proven results in sports venues, entertainment destinations, and luxury hospitality projects. See why Landmark Logix is the obvious choice for your landmark project.",
   keywords:
-    "owner's representative, sports venues, entertainment facilities, hospitality projects, construction management, project management, East Coast",
+    "owner's representative, sports venues, entertainment facilities, hospitality projects, construction management, project management",
 }
 
 const specializations = [
@@ -91,7 +91,7 @@ const advantages = [
     description: "Every project built to last generations, not just pass inspection",
   },
   {
-    title: "East Coast Network",
+    title: "Regional Network",
     description: "Established relationships with top-tier contractors and suppliers",
   },
   {
@@ -117,7 +117,7 @@ export default function WhyChooseUsPage() {
                 </h1>
                 <p className="text-xl sm:text-2xl mb-8 text-slate-200 text-pretty">
                   20+ years of proven results in sports venues, entertainment destinations, and luxury hospitality
-                  projects across the East Coast
+                  projects
                 </p>
                 <Button
                   size="lg"

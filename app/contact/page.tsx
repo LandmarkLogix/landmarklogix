@@ -5,50 +5,14 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
-import Image from "next/image"
-import Link from "next/link"
+import Header from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center">
-              <Link href="/">
-                <Image
-                  src="/images/landmark-logix-logo.png"
-                  alt="Landmark Logix"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto cursor-pointer"
-                />
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link href="/about" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                About
-              </Link>
-              <Link href="/services" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Services
-              </Link>
-              <Link href="/markets" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Markets
-              </Link>
-              <Link href="/why-choose-us" className="text-slate-600 hover:text-[#00205B] transition-colors font-medium">
-                Why Choose Us
-              </Link>
-              <Link href="/contact" className="text-[#00205B] font-semibold">
-                Contact
-              </Link>
-            </div>
-            <Link href="/contact">
-              <Button className="bg-[#00205B] hover:bg-[#000034] text-white font-medium">Get Consultation</Button>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-20 lg:py-24">
@@ -247,7 +211,7 @@ export default function ContactPage() {
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-[#C5B783]" />
                     <div>
-                      <p className="font-medium text-[#00205B]">East Coast United States</p>
+                      <p className="font-medium text-[#00205B]">United States</p>
                       <p className="text-sm text-slate-600">Service area</p>
                     </div>
                   </div>
@@ -276,9 +240,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#00205B] mb-2">Service Territory</h4>
-                    <p className="text-slate-600">
-                      From Maine to Georgia - serving landmark projects across the Eastern United States
-                    </p>
+                    <p className="text-slate-600">Serving landmark projects across the United States</p>
                   </div>
                 </CardContent>
               </Card>
@@ -331,8 +293,7 @@ export default function ContactPage() {
               </div>
               <h3 className="text-xl font-semibold text-[#00205B] mb-4">Expert Assessment</h3>
               <p className="text-slate-600">
-                Benefit from 20+ years of landmark project experience and specialized knowledge of East Coast
-                regulations.
+                Benefit from 20+ years of landmark project experience and specialized knowledge of regulations.
               </p>
             </div>
 
@@ -455,57 +416,7 @@ export default function ContactPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#000034] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="mb-6">
-                <Image
-                  src="/images/landmark-logix-logo.png"
-                  alt="Landmark Logix"
-                  width={200}
-                  height={60}
-                  className="h-12 w-auto brightness-0 invert"
-                />
-              </div>
-              <p className="text-slate-300 mb-4">Building landmarks that stand the test of time</p>
-              <p className="text-slate-400 text-sm">© 2024 Landmark Logix. All rights reserved.</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Contact Info</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>(555) 123-LAND</li>
-                <li>info@landmarklogix.com</li>
-                <li>East Coast USA</li>
-                <li>24-Hour Response</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Services</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>Owner's Representation</li>
-                <li>Project Management</li>
-                <li>Historic Preservation</li>
-                <li>Regulatory Navigation</li>
-                <li>Quality Assurance</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-[#C5B783]">Markets</h4>
-              <ul className="space-y-2 text-slate-300 text-sm">
-                <li>Museums & Cultural Centers</li>
-                <li>Civic Buildings</li>
-                <li>Educational Institutions</li>
-                <li>Religious Buildings</li>
-                <li>Historic Renovations</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

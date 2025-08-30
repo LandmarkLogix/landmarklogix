@@ -25,8 +25,7 @@ const features = [
   {
     icon: Award,
     title: "Proven Excellence",
-    description:
-      "Two decades of successful landmark projects across the East Coast demonstrate our commitment to excellence.",
+    description: "Two decades of successful landmark projects demonstrate our commitment to excellence.",
   },
 ]
 

@@ -77,7 +77,7 @@ export default function AboutPage() {
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-6 w-6 text-[#C5B783] mt-1" />
                   <div>
-                    <h3 className="font-semibold text-[#00205B]">East Coast Focus</h3>
+                    <h3 className="font-semibold text-[#00205B]">Regional Expertise</h3>
                     <p className="text-slate-600">Deep regional expertise and relationships</p>
                   </div>
                 </div>
@@ -168,8 +168,8 @@ export default function AboutPage() {
                 </div>
                 <CardTitle className="text-[#00205B]">Proven Excellence</CardTitle>
                 <CardDescription>
-                  Two decades of successful landmark projects across the East Coast demonstrate our unwavering
-                  commitment to excellence and client satisfaction.
+                  Two decades of successful landmark projects demonstrate our unwavering commitment to excellence and
+                  client satisfaction.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -235,11 +235,11 @@ export default function AboutPage() {
                   <Clock className="h-6 w-6 text-[#C5B783]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#00205B] mb-2">East Coast Expertise</h3>
+                  <h3 className="text-xl font-semibold text-[#00205B] mb-2">Regional Expertise</h3>
                   <p className="text-slate-600">
-                    Our deep knowledge of East Coast regulatory environments, historic preservation requirements, and
-                    regional building practices gives us an advantage in navigating complex approval processes and
-                    ensuring compliance.
+                    Our deep knowledge of regulatory environments, historic preservation requirements, and local
+                    building practices gives us an advantage in navigating complex approval processes and ensuring
+                    compliance.
                   </p>
                 </div>
               </div>

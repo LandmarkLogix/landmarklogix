@@ -3,8 +3,17 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
+import { usePathname } from "next/navigation"
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActivePage = (href: string) => {
+    return pathname === href
+  }
+
   return (
     <header className="bg-white shadow-sm border-b sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
@@ -21,11 +30,16 @@ export function Header() {
               />
             </Link>
           </div>
+
           <ul className="hidden lg:flex space-x-6 xl:space-x-8" role="menubar">
             <li role="none">
               <Link
                 href="/about"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2"
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                  isActivePage("/about")
+                    ? "text-[#00205B] border-[#00205B]"
+                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                }`}
                 role="menuitem"
               >
                 About
@@ -34,7 +48,11 @@ export function Header() {
             <li role="none">
               <Link
                 href="/services"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2"
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                  isActivePage("/services")
+                    ? "text-[#00205B] border-[#00205B]"
+                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                }`}
                 role="menuitem"
               >
                 Services
@@ -43,7 +61,11 @@ export function Header() {
             <li role="none">
               <Link
                 href="/markets"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2"
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                  isActivePage("/markets")
+                    ? "text-[#00205B] border-[#00205B]"
+                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                }`}
                 role="menuitem"
               >
                 Markets
@@ -52,7 +74,11 @@ export function Header() {
             <li role="none">
               <Link
                 href="/why-choose-us"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2"
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                  isActivePage("/why-choose-us")
+                    ? "text-[#00205B] border-[#00205B]"
+                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                }`}
                 role="menuitem"
               >
                 Why Choose Us
@@ -61,21 +87,114 @@ export function Header() {
             <li role="none">
               <Link
                 href="/contact"
-                className="text-slate-600 hover:text-[#00205B] transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2"
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                  isActivePage("/contact")
+                    ? "text-[#00205B] border-[#00205B]"
+                    : "text-slate-600 hover:text-[#00205B] border-transparent hover:border-[#00205B]"
+                }`}
                 role="menuitem"
               >
                 Contact
               </Link>
             </li>
           </ul>
-          <Link href="/contact" aria-label="Get consultation - Contact us">
-            <Button className="bg-[#00205B] hover:bg-[#000034] text-white font-medium min-h-[44px] min-w-[44px] px-3 sm:px-4 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2">
-              <span className="hidden sm:inline">Get Consultation</span>
-              <span className="sm:hidden">Contact</span>
-            </Button>
-          </Link>
+
+          <div className="flex items-center space-x-4">
+            <Link href="/contact" aria-label="Schedule consultation - Contact us" className="hidden sm:block">
+              <Button className="bg-[#00205B] hover:bg-[#000034] text-white font-medium min-h-[44px] min-w-[44px] px-4 text-sm focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 transition-colors duration-200">
+                Schedule Consultation
+              </Button>
+            </Link>
+
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="lg:hidden p-2 rounded-md text-slate-600 hover:text-[#00205B] hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 transition-colors duration-200"
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
+              aria-label="Toggle navigation menu"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {isMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+
+        {isMenuOpen && (
+          <div id="mobile-menu" className="lg:hidden border-t border-slate-200 bg-white">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              <Link
+                href="/about"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActivePage("/about")
+                    ? "text-[#00205B] bg-slate-50"
+                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="/services"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActivePage("/services")
+                    ? "text-[#00205B] bg-slate-50"
+                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link
+                href="/markets"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActivePage("/markets")
+                    ? "text-[#00205B] bg-slate-50"
+                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Markets
+              </Link>
+              <Link
+                href="/why-choose-us"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActivePage("/why-choose-us")
+                    ? "text-[#00205B] bg-slate-50"
+                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Why Choose Us
+              </Link>
+              <Link
+                href="/contact"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActivePage("/contact")
+                    ? "text-[#00205B] bg-slate-50"
+                    : "text-slate-600 hover:text-[#00205B] hover:bg-slate-50"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <div className="pt-2">
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <Button className="w-full bg-[#00205B] hover:bg-[#000034] text-white font-medium py-2 px-4 text-base focus:outline-none focus:ring-2 focus:ring-[#00205B] focus:ring-offset-2 transition-colors duration-200">
+                    Schedule Consultation
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   )
 }
+
+export default Header

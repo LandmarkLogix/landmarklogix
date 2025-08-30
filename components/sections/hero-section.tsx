@@ -27,8 +27,8 @@ export function HeroSection() {
                 <span className="text-[#C5B783]"> Stand the Test of Time</span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-200 leading-relaxed text-pretty max-w-2xl mx-auto lg:mx-0">
-                Expert owner's representative services for public-facing landmark buildings across the East Coast. From
-                historic preservation to modern civic architecture, we ensure your project becomes a lasting legacy.
+                Expert owner's representative services for public-facing landmark buildings. From historic preservation
+                to modern civic architecture, we ensure your project becomes a lasting legacy.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/contact" aria-label="Start your landmark building project">
