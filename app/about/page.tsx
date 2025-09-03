@@ -103,8 +103,8 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/construction-management-professionals-reviewing-.png"
-                alt="Professional construction management team reviewing blueprints and coordinating on complex commercial project site"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/used%20-%20AdobeStock_746092377-7UtSPuyw3fPras9Q7fTdA2tadaQGLv.jpeg"
+                alt="Construction manager leading team meeting on active construction site with workers in safety gear"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
@@ -279,8 +279,8 @@ export default function AboutPage() {
 
             <div className="relative">
               <Image
-                src="/construction-site-management-with-cranes-and-mo.png"
-                alt="Construction site management showing modern building construction with cranes and professional oversight"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AdobeStock_733932446-bZvjCkW2vXIoYEpe3GCLDDX1xU4bsi.jpeg"
+                alt="Construction excavator at sunset on active construction site showcasing heavy equipment and project scale"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg"

@@ -16,7 +16,7 @@ export default function ServicesPage() {
       description:
         "Feasibility analysis with ROI considerations, stakeholder alignment, and expectation management for complex commercial projects",
       serviceCount: "10 specialized services",
-      image: "/strategic-planning-commercial-construction-with-.png",
+      image: "/executive-strategic-planning-meeting.png",
     },
     {
       id: "procurement-financial",
@@ -25,7 +25,7 @@ export default function ServicesPage() {
       description:
         "Budget development with lifecycle cost analysis, design team selection, and cost management for revenue-critical projects",
       serviceCount: "10 specialized services",
-      image: "/financial-planning-construction-budget-analysis-.png",
+      image: "/modern-financial-analysis-dashboard.png",
     },
     {
       id: "contract-risk",
@@ -34,7 +34,7 @@ export default function ServicesPage() {
       description:
         "Advanced project coordination for multi-stakeholder environments and change management with cost-impact analysis",
       serviceCount: "10 specialized services",
-      image: "/construction-risk-management-with-safety-protoc.png",
+      image: "/contract-review-meeting-with-documents.png",
     },
     {
       id: "design-regulatory",
@@ -43,7 +43,7 @@ export default function ServicesPage() {
       description:
         "Design oversight for high-performance facilities, permitting, and compliance management for commercial developments",
       serviceCount: "10 specialized services",
-      image: "/architectural-design-review-for-commercial-cons.png",
+      image: "/architectural-design-review-session.png",
     },
     {
       id: "construction-quality",
@@ -52,7 +52,7 @@ export default function ServicesPage() {
       description:
         "Quality control systems for high-performance facilities and schedule optimization for revenue-critical timelines",
       serviceCount: "10 specialized services",
-      image: "/construction-quality-control-inspection-with-p.png",
+      image: "/construction-site-quality-inspection.png",
     },
     {
       id: "technology-transition",
@@ -61,7 +61,7 @@ export default function ServicesPage() {
       description:
         "Advanced technical systems coordination, operational planning, and performance optimization for commercial facilities",
       serviceCount: "10 specialized services",
-      image: "/modern-building-technology-integration-with-sm.png",
+      image: "/smart-building-technology-integration.png",
     },
   ]
 
@@ -193,8 +193,8 @@ export default function ServicesPage() {
             </div>
             <div className="relative">
               <Image
-                src="/comprehensive-construction-project-management.png"
-                alt="Comprehensive commercial construction project management with multiple stakeholders and advanced coordination systems"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/used%20-%20AdobeStock_614201080-Rz5MPe2twjazxuw2E9Hk8cz1Zn1Mbr.jpeg"
+                alt="Child discovering dinosaur exhibit in modern museum showcasing complex commercial construction and visitor engagement"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"

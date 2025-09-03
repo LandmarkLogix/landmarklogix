@@ -133,11 +133,11 @@ export default function SportsAthleticsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/professional-stadium-interior-with-modern-seating-.png"
-                alt="Professional stadium interior with modern seating and advanced technology systems"
-                width={800}
-                height={600}
-                className="rounded-lg shadow-2xl"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AdobeStock_841847459-Suhbqj2LtrYiW6AxX6kf3xg4348Biv.jpeg"
+                alt="Baseball stadium with fans enjoying a game, featuring premium seating areas with food and drinks overlooking the field"
+                width={600}
+                height={500}
+                className="rounded-lg shadow-lg"
               />
             </div>
           </div>

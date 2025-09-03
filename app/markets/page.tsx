@@ -73,35 +73,35 @@ export default function MarketsPage() {
       title: "Civic & Government",
       icon: Landmark,
       description: "Federal, state, and local government facilities, justice centers, and public safety buildings",
-      image: "/government-building-construction-with-classical-.png",
+      image: "/stately-government-building-with-neoclassical-architecture.png",
     },
     {
       id: "residential-community",
       title: "Residential & Community",
       icon: Home,
       description: "High-end residential, estate development, luxury living, and community planning",
-      image: "/luxury-residential-development-with-modern-arch.png",
+      image: "/modern-residential-community-with-amenities.png",
     },
     {
       id: "healthcare-wellness",
       title: "Healthcare & Wellness",
       icon: Heart,
       description: "Hospitals, medical centers, senior living, research facilities, and wellness centers",
-      image: "/modern-hospital-construction-with-healing-design.png",
+      image: "/modern-hospital-building-with-healing-design.png",
     },
     {
       id: "industrial-specialized",
       title: "Industrial & Specialized",
       icon: Factory,
       description: "Manufacturing, energy facilities, specialized environments, and mission-critical operations",
-      image: "/modern-industrial-facility-construction-with-a.png",
+      image: "/modern-industrial-facility-with-clean-architecture.png",
     },
     {
       id: "transportation-infrastructure",
       title: "Transportation & Infrastructure",
       icon: Plane,
       description: "Airports, train stations, bridges, ports, and multi-modal transportation hubs",
-      image: "/modern-airport-terminal-construction-with-large.png",
+      image: "/modern-airport-terminal-with-glass-architecture.png",
     },
   ]
 
@@ -225,8 +225,8 @@ export default function MarketsPage() {
             </div>
             <div className="relative">
               <Image
-                src="/diverse-landmark-buildings-across-multiple-se.png"
-                alt="Diverse landmark buildings across multiple sectors showcasing architectural excellence and professional construction management"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AdobeStock_776159089-8il1G5crX6xthPHYOgvoD96YfGfc9B.jpeg"
+                alt="Excited hockey fans celebrating at arena showcasing the vibrant community experience created by sports and entertainment venues"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"

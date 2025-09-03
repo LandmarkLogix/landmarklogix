@@ -59,8 +59,8 @@ export function WhyChooseSection() {
 
             <div className="relative order-first lg:order-last">
               <ImageWithFallback
-                src="/placeholder.svg?height=600&width=500&text=Construction+management+professionals+on+complex+project+site"
-                alt="Construction management professionals coordinating on a complex project site, demonstrating Landmark Logix expertise in high-stakes construction management"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AdobeStock_805670002-s3keLiaqp7vc6QFBNxiFHuVXJYqq76.jpeg"
+                alt="Modern aquarium facility showcasing complex commercial construction with sophisticated engineering and design, representing Landmark Logix expertise in specialized construction projects"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-lg w-full h-auto"

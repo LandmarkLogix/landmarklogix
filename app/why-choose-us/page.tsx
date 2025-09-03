@@ -130,26 +130,8 @@ export default function WhyChooseUsPage() {
             </div>
           </section>
 
-          {/* The Owner's Rep Difference */}
-          <section className="py-16 sm:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-6">The Owner's Rep Difference</h2>
-                <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-8">
-                  An owner's representative is your advocate throughout the entire construction process - protecting
-                  your interests, managing contractors, and ensuring quality delivery. Without professional
-                  representation, projects face significant risks.
-                </p>
-                <div className="bg-[#C5B783]/10 rounded-lg p-6 max-w-2xl mx-auto">
-                  <p className="text-2xl font-bold text-[#00205B] mb-2">Projects with owner's reps deliver</p>
-                  <p className="text-4xl font-bold text-[#C5B783]">15-25% better outcomes</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
           {/* Our Specialized Expertise */}
-          <section className="py-16 sm:py-20 bg-slate-50">
+          <section className="py-16 sm:py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">Our Specialized Expertise</h2>
@@ -172,92 +154,8 @@ export default function WhyChooseUsPage() {
             </div>
           </section>
 
-          {/* Proven Track Record */}
-          <section className="py-16 sm:py-20 bg-[#00205B] text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-4">Proven Track Record</h2>
-                <p className="text-xl text-slate-200 max-w-2xl mx-auto">
-                  Numbers don't lie. Our results speak for themselves.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">150+</div>
-                  <div className="text-sm sm:text-base text-slate-200">Landmark Projects Delivered</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">$2B+</div>
-                  <div className="text-sm sm:text-base text-slate-200">Project Value Managed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">12%</div>
-                  <div className="text-sm sm:text-base text-slate-200">Average Under Budget</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">98%</div>
-                  <div className="text-sm sm:text-base text-slate-200">Client Satisfaction Rate</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">Zero</div>
-                  <div className="text-sm sm:text-base text-slate-200">Major Disputes in 20+ Years</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Our Process Advantage */}
-          <section className="py-16 sm:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">Our Process Advantage</h2>
-                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                  Our proven 5-step process ensures every project is delivered on time, on budget, and to the highest
-                  standards.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-5 gap-6">
-                {processSteps.map((step, index) => (
-                  <div key={index} className="text-center">
-                    <div className="bg-[#C5B783]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <step.icon className="h-8 w-8 text-[#C5B783]" />
-                    </div>
-                    <h3 className="font-bold text-[#00205B] mb-2">{step.title}</h3>
-                    <p className="text-sm text-slate-600">{step.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* What Sets Us Apart */}
-          <section className="py-16 sm:py-20 bg-slate-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">What Sets Us Apart</h2>
-                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                  We're not just another construction management firm. We're specialists in landmark destination
-                  projects.
-                </p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {advantages.map((advantage, index) => (
-                  <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                    <div className="flex items-start space-x-3">
-                      <CheckCircle className="h-6 w-6 text-[#C5B783] flex-shrink-0 mt-1" />
-                      <div>
-                        <h3 className="font-bold text-[#00205B] mb-2">{advantage.title}</h3>
-                        <p className="text-slate-600 text-sm">{advantage.description}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
           {/* Competition Comparison */}
-          <section className="py-16 sm:py-20 bg-white">
+          <section className="py-16 sm:py-20 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">The Competition Can't Match This</h2>
@@ -324,6 +222,108 @@ export default function WhyChooseUsPage() {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+          </section>
+
+          {/* The Owner's Rep Difference */}
+          <section className="py-16 sm:py-20 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-6">The Owner's Rep Difference</h2>
+                <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-8">
+                  An owner's representative is your advocate throughout the entire construction process - protecting
+                  your interests, managing contractors, and ensuring quality delivery. Without professional
+                  representation, projects face significant risks.
+                </p>
+                <div className="bg-[#C5B783]/10 rounded-lg p-6 max-w-2xl mx-auto">
+                  <p className="text-2xl font-bold text-[#00205B] mb-2">Projects with owner's reps deliver</p>
+                  <p className="text-4xl font-bold text-[#C5B783]">15-25% better outcomes</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Proven Track Record */}
+          <section className="py-16 sm:py-20 bg-[#00205B] text-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">Proven Track Record</h2>
+                <p className="text-xl text-slate-200 max-w-2xl mx-auto">
+                  Numbers don't lie. Our results speak for themselves.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div className="text-center">
+                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">150+</div>
+                  <div className="text-sm sm:text-base text-slate-200">Landmark Projects Delivered</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">$2B+</div>
+                  <div className="text-sm sm:text-base text-slate-200">Project Value Managed</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">12%</div>
+                  <div className="text-sm sm:text-base text-slate-200">Average Under Budget</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">98%</div>
+                  <div className="text-sm sm:text-base text-slate-200">Client Satisfaction Rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl sm:text-5xl font-bold text-[#C5B783] mb-2">Zero</div>
+                  <div className="text-sm sm:text-base text-slate-200">Major Disputes in 20+ Years</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Our Process Advantage */}
+          <section className="py-16 sm:py-20 bg-slate-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">Our Process Advantage</h2>
+                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                  Our proven 5-step process ensures every project is delivered on time, on budget, and to the highest
+                  standards.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-5 gap-6">
+                {processSteps.map((step, index) => (
+                  <div key={index} className="text-center">
+                    <div className="bg-[#C5B783]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                      <step.icon className="h-8 w-8 text-[#C5B783]" />
+                    </div>
+                    <h3 className="font-bold text-[#00205B] mb-2">{step.title}</h3>
+                    <p className="text-sm text-slate-600">{step.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* What Sets Us Apart */}
+          <section className="py-16 sm:py-20 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">What Sets Us Apart</h2>
+                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                  We're not just another construction management firm. We're specialists in landmark destination
+                  projects.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {advantages.map((advantage, index) => (
+                  <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                    <div className="flex items-start space-x-3">
+                      <CheckCircle className="h-6 w-6 text-[#C5B783] flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-bold text-[#00205B] mb-2">{advantage.title}</h3>
+                        <p className="text-slate-600 text-sm">{advantage.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </section>

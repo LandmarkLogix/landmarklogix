@@ -52,8 +52,8 @@ export function HeroSection() {
             </div>
             <div className="relative order-first lg:order-last">
               <ImageWithFallback
-                src="/modern-stadium-construction-with-steel-framework-a.png"
-                alt="Modern stadium under construction showcasing complex steel framework, construction cranes, and professional construction management expertise"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AdobeStock_841847459-Suhbqj2LtrYiW6AxX6kf3xg4348Biv.jpeg"
+                alt="Baseball stadium with fans enjoying a game, featuring premium seating areas with food and drinks overlooking the field"
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl w-full h-auto"
