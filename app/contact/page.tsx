@@ -6,6 +6,8 @@ import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { ContactForm } from "@/components/forms/contact-form"
 
+export const dynamic = "force-dynamic"
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -78,7 +80,7 @@ export default function ContactPage() {
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-[#C5B783]" />
                     <div>
-                      <p className="font-medium text-[#00205B]">(555) 123-LAND</p>
+                      <p className="font-medium text-[#00205B]">(202) 643-5467</p>
                       <p className="text-sm text-slate-600">Main office line</p>
                     </div>
                   </div>
@@ -299,8 +301,8 @@ export default function ContactPage() {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-[#00205B] bg-transparent font-medium"
               >
-                <a href="tel:+15551235263" className="inline-flex items-center gap-2">
-                  Call (555) 123-LAND
+                <a href="tel:+12026435467" className="inline-flex items-center gap-2">
+                  Call (202) 643-5467
                 </a>
               </Button>
             </div>

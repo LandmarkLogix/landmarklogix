@@ -23,7 +23,7 @@ export function Footer() {
 
             <div className="space-y-2 mb-4 text-sm sm:text-base">
               <p className="text-slate-300">
-                <span className="text-slate-400">Phone:</span> (123) 456-7890
+                <span className="text-slate-400">Phone:</span> (202) 643-5467
               </p>
               <p className="text-slate-300">
                 <span className="text-slate-400">Email:</span> info@landmarklogix.com

@@ -108,7 +108,7 @@ export default function TermsOfServicePage() {
           <h2 className="text-xl font-semibold text-brand-navy">10. Contact</h2>
           <p>
             Questions regarding these Terms can be directed to <a className="font-medium" href="mailto:legal@landmarklogix.com">legal@landmarklogix.com</a> or by calling
-            <a className="font-medium" href="tel:+15551235263"> (555) 123-LAND</a>.
+            <a className="font-medium" href="tel:+12026435467"> (202) 643-5467</a>.
           </p>
         </section>
       </article>

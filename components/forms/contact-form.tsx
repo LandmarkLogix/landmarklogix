@@ -174,7 +174,7 @@ export function ContactForm() {
           <label className="mb-2 block text-sm font-medium text-[#00205B]" htmlFor="contact-phone">
             Phone Number
           </label>
-          <Input id="contact-phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+          <Input id="contact-phone" name="phone" type="tel" placeholder="(202) 643-5467" />
         </div>
         <div>
           <label className="mb-2 block text-sm font-medium text-[#00205B]" htmlFor="contact-company">

@@ -120,7 +120,7 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-xl font-semibold text-brand-navy">9. Contact us</h2>
           <p>
             Questions or concerns? Email <a className="font-medium" href="mailto:privacy@landmarklogix.com">privacy@landmarklogix.com</a> or call
-            <a className="font-medium" href="tel:+15551235263"> (555) 123-LAND</a>. We aim to respond within one business day.
+            <a className="font-medium" href="tel:+12026435467"> (202) 643-5467</a>. We aim to respond within one business day.
           </p>
         </section>
       </article>
