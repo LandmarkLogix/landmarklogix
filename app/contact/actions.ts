@@ -1,13 +1,47 @@
 "use server"
 
-import { Resend } from "resend"
+import nodemailer from "nodemailer"
 import { z } from "zod"
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
+
+const smtpHost = process.env.SMTP_HOST ?? "smtp.gmail.com"
+const smtpPort = Number.parseInt(process.env.SMTP_PORT ?? "465", 10)
+const smtpSecure = process.env.SMTP_SECURE ? process.env.SMTP_SECURE === "true" : smtpPort === 465
+const smtpUser =
+  process.env.SMTP_USER ?? process.env.GMAIL_USER ?? process.env.CONTACT_FROM_EMAIL ?? ""
+const smtpPass = process.env.SMTP_PASS ?? process.env.GMAIL_APP_PASSWORD ?? ""
+
 const defaultRecipient = (process.env.CONTACT_FORWARD_TO ?? "info@landmarklogix.com")
   .split(",")
   .map((value) => value.trim())
   .filter(Boolean)
-const defaultFromAddress = process.env.CONTACT_FROM_EMAIL ?? "no-reply@landmarklogix.com"
+const defaultFromAddress = process.env.CONTACT_FROM_EMAIL ?? (smtpUser || "info@landmarklogix.com")
+
+let transporter: nodemailer.Transporter | null = null
+
+function getTransporter() {
+  if (!smtpUser || !smtpPass) {
+    return null
+  }
+
+  if (!transporter) {
+    try {
+      transporter = nodemailer.createTransport({
+        host: smtpHost,
+        port: smtpPort,
+        secure: smtpSecure,
+        auth: {
+          user: smtpUser,
+          pass: smtpPass,
+        },
+      })
+    } catch (error) {
+      console.error("[contact] Failed to initialize SMTP transporter", error)
+      transporter = null
+    }
+  }
+
+  return transporter
+}
 
 
 export type ContactFormState = {
@@ -92,9 +126,11 @@ export async function submitContactForm(
 
   const recipientList = defaultRecipient.length > 0 ? defaultRecipient : ["info@landmarklogix.com"]
 
-  if (resend) {
+  const smtpTransporter = getTransporter()
+
+  if (smtpTransporter) {
     try {
-      await resend.emails.send({
+      await smtpTransporter.sendMail({
         from: `Landmark Logix Website <${defaultFromAddress}>`,
         to: recipientList,
         replyTo: data.email,
@@ -111,7 +147,7 @@ export async function submitContactForm(
     }
   } else {
     console.warn(
-      "[contact] RESEND_API_KEY not configured – submission stored in logs only. Set RESEND_API_KEY and CONTACT_FROM_EMAIL to enable notifications."
+      "[contact] SMTP credentials not configured – submission stored in logs only. Set SMTP_USER/SMTP_PASS (or GMAIL_USER/GMAIL_APP_PASSWORD) to enable email notifications."
     )
   }
 
