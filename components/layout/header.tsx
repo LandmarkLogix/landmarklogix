@@ -47,6 +47,19 @@ export function Header() {
             </li>
             <li role="none">
               <Link
+                href="/work"
+                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                  isActivePage("/work")
+                    ? "text-brand-navy border-brand-navy"
+                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
+                }`}
+                role="menuitem"
+              >
+                Work
+              </Link>
+            </li>
+            <li role="none">
+              <Link
                 href="/services"
                 className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
                   isActivePage("/services")
@@ -137,6 +150,17 @@ export function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/work"
+                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                  isActivePage("/work")
+                    ? "text-brand-navy bg-slate-50"
+                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Work
               </Link>
               <Link
                 href="/services"

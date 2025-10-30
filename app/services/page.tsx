@@ -71,7 +71,7 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-20 lg:py-28">
+      <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-16 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
@@ -109,7 +109,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Groups Grid */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-14 sm:py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Our Specialized Service Groups</h2>
@@ -165,7 +165,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Complete Owner's Representation Section */}
-      <section className="py-20 bg-white">
+      <section className="py-14 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -205,7 +205,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Comprehensive Services Matter */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-14 sm:py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">
@@ -266,7 +266,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Service Integration Timeline */}
-      <section className="py-20 bg-white">
+      <section className="py-14 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Services Across Project Lifecycle</h2>
@@ -359,7 +359,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-20 bg-[#00205B]">
+      <section className="py-14 sm:py-16 bg-[#00205B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">

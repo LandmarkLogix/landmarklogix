@@ -100,6 +100,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/work" className="hover:text-brand-golden transition-colors duration-200">
+                  Work
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="hover:text-brand-golden transition-colors duration-200">
                   Services
                 </Link>

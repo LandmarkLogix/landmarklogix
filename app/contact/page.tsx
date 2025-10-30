@@ -1,12 +1,10 @@
 import { Phone, Mail, MapPin, Clock, CheckCircle, ArrowRight, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
+import { ContactForm } from "@/components/forms/contact-form"
 
 export default function ContactPage() {
   return (
@@ -15,7 +13,7 @@ export default function ContactPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-20 lg:py-24">
+      <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-14 sm:py-16 lg:py-20">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
@@ -50,149 +48,21 @@ export default function ContactPage() {
       </section>
 
       {/* Main Contact Form Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-16">
+          <div className="grid gap-12 lg:grid-cols-3 lg:gap-10">
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <Card className="border-slate-200 shadow-lg">
-                <CardHeader>
+              <Card className="border-slate-200 shadow-md shadow-slate-200/40">
+                <CardHeader className="space-y-3">
                   <CardTitle className="text-2xl text-[#00205B]">Request Your Project Consultation</CardTitle>
                   <CardDescription className="text-lg">
                     Tell us about your complex construction project and we'll provide expert guidance tailored to your
                     specific operational and performance requirements.
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">
-                        Name <span className="text-red-500">*</span>
-                      </label>
-                      <Input
-                        placeholder="Your full name"
-                        required
-                        className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">
-                        Email <span className="text-red-500">*</span>
-                      </label>
-                      <Input
-                        type="email"
-                        placeholder="your.email@organization.com"
-                        required
-                        className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Phone Number</label>
-                      <Input
-                        type="tel"
-                        placeholder="(555) 123-4567"
-                        className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Company/Organization</label>
-                      <Input
-                        placeholder="Your organization name"
-                        className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Type</label>
-                      <Select>
-                        <SelectTrigger className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]">
-                          <SelectValue placeholder="Select project type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="sports">Sports & Athletics Facility</SelectItem>
-                          <SelectItem value="entertainment">Entertainment & Leisure Venue</SelectItem>
-                          <SelectItem value="hospitality">Hospitality & Tourism Development</SelectItem>
-                          <SelectItem value="cultural">Cultural & Arts Institution</SelectItem>
-                          <SelectItem value="education">Education & Research Facility</SelectItem>
-                          <SelectItem value="corporate">Corporate & Commercial Building</SelectItem>
-                          <SelectItem value="mixed-use">Mixed-Use Development</SelectItem>
-                          <SelectItem value="other">Other Complex Project</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Budget Range</label>
-                      <Select>
-                        <SelectTrigger className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]">
-                          <SelectValue placeholder="Select budget range" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="10-25m">$10M - $25M</SelectItem>
-                          <SelectItem value="25-50m">$25M - $50M</SelectItem>
-                          <SelectItem value="50-100m">$50M - $100M</SelectItem>
-                          <SelectItem value="100m-plus">$100M+</SelectItem>
-                          <SelectItem value="tbd">To Be Determined</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Phase</label>
-                      <Select>
-                        <SelectTrigger className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]">
-                          <SelectValue placeholder="Select current phase" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="planning">Planning/Feasibility Stage</SelectItem>
-                          <SelectItem value="design">Design Phase</SelectItem>
-                          <SelectItem value="pre-construction">Pre-Construction</SelectItem>
-                          <SelectItem value="construction">Construction Started</SelectItem>
-                          <SelectItem value="other">Other/Not Sure</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Timeline</label>
-                      <Select>
-                        <SelectTrigger className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]">
-                          <SelectValue placeholder="Select timeline" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="immediate">Immediate (within 30 days)</SelectItem>
-                          <SelectItem value="1-6-months">1-6 months</SelectItem>
-                          <SelectItem value="6-12-months">6-12 months</SelectItem>
-                          <SelectItem value="12-plus-months">12+ months</SelectItem>
-                          <SelectItem value="multi-year">Multi-year development</SelectItem>
-                          <SelectItem value="exploring">Just exploring options</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="text-sm font-medium text-[#00205B] mb-2 block">Project Description</label>
-                    <Textarea
-                      placeholder="Tell us about your complex construction project and how we can help. Include any specific operational requirements, performance goals, stakeholder considerations, or challenges you're facing."
-                      rows={6}
-                      className="border-slate-300 focus:border-[#C5B783] focus:ring-[#C5B783]"
-                    />
-                  </div>
-
-                  <Button className="w-full bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold text-lg py-3">
-                    Schedule Project Consultation
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-
-                  <p className="text-sm text-slate-600 text-center">
-                    By submitting this form, you agree to be contacted by Landmark Logix regarding your project inquiry.
-                  </p>
+                <CardContent>
+                  <ContactForm />
                 </CardContent>
               </Card>
             </div>
@@ -276,7 +146,7 @@ export default function ContactPage() {
       </section>
 
       {/* Why Contact Us Section */}
-      <section className="py-20 bg-white">
+      <section className="py-14 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">What to Expect</h2>
@@ -335,7 +205,7 @@ export default function ContactPage() {
       </section>
 
       {/* Best Times to Contact Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-14 sm:py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Best Times to Contact Us</h2>
@@ -402,7 +272,7 @@ export default function ContactPage() {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-20 bg-[#00205B]">
+      <section className="py-16 bg-[#00205B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
@@ -413,16 +283,25 @@ export default function ContactPage() {
               and ensure your facility delivers exceptional operational performance and long-term success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold">
-                Schedule Your Consultation
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button
+                asChild
+                size="lg"
+                className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold"
+              >
+                <a href="#contact-form" className="inline-flex items-center gap-2">
+                  Schedule Your Consultation
+                  <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                </a>
               </Button>
               <Button
+                asChild
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-[#00205B] bg-transparent font-medium"
               >
-                Call (555) 123-LAND
+                <a href="tel:+15551235263" className="inline-flex items-center gap-2">
+                  Call (555) 123-LAND
+                </a>
               </Button>
             </div>
             <p className="text-[#C5B783] font-medium mt-6">

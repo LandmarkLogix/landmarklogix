@@ -51,7 +51,7 @@ const markets = [
 
 export function MarketsSection() {
   return (
-    <section id="markets" className="py-16 sm:py-20 bg-slate-50" aria-labelledby="markets-heading">
+    <section id="markets" className="py-14 sm:py-16 bg-slate-50" aria-labelledby="markets-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2

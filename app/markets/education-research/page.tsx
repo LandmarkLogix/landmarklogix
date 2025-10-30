@@ -92,7 +92,7 @@ export default function EducationResearchPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-20 lg:py-28">
+      <section className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-16 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -145,7 +145,7 @@ export default function EducationResearchPage() {
       </section>
 
       {/* Market Overview */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-14 sm:py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -180,7 +180,7 @@ export default function EducationResearchPage() {
       </section>
 
       {/* Project Types */}
-      <section className="py-20 bg-white">
+      <section className="py-14 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#00205B] mb-4">Education & Research Project Types</h2>
@@ -211,7 +211,7 @@ export default function EducationResearchPage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="py-20 bg-[#00205B]">
+      <section className="py-14 sm:py-16 bg-[#00205B]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
