@@ -107,7 +107,7 @@ export default function WhyChooseUsPage() {
       <main className="min-h-screen">
         <ErrorBoundary>
           {/* Hero Section */}
-          <section className="relative py-20 sm:py-24 lg:py-32 bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white overflow-hidden">
+          <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white overflow-hidden">
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="max-w-4xl mx-auto text-center">
@@ -120,18 +120,21 @@ export default function WhyChooseUsPage() {
                   projects
                 </p>
                 <Button
+                  asChild
                   size="lg"
                   className="bg-[#C5B783] hover:bg-[#B5A673] text-[#00205B] font-semibold px-8 py-4 text-lg"
                 >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Schedule Your Project Strategy Call
+                  <Link href="/contact" className="inline-flex items-center gap-2">
+                    <Calendar className="h-5 w-5" />
+                    Schedule Your Project Strategy Call
+                  </Link>
                 </Button>
               </div>
             </div>
           </section>
 
           {/* Our Specialized Expertise */}
-          <section className="py-16 sm:py-20 bg-white">
+          <section className="py-14 sm:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">Our Specialized Expertise</h2>
@@ -155,7 +158,7 @@ export default function WhyChooseUsPage() {
           </section>
 
           {/* Competition Comparison */}
-          <section className="py-16 sm:py-20 bg-slate-50">
+          <section className="py-14 sm:py-16 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">The Competition Can't Match This</h2>
@@ -227,7 +230,7 @@ export default function WhyChooseUsPage() {
           </section>
 
           {/* The Owner's Rep Difference */}
-          <section className="py-16 sm:py-20 bg-white">
+          <section className="py-14 sm:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-6">The Owner's Rep Difference</h2>
@@ -245,7 +248,7 @@ export default function WhyChooseUsPage() {
           </section>
 
           {/* Proven Track Record */}
-          <section className="py-16 sm:py-20 bg-[#00205B] text-white">
+          <section className="py-14 sm:py-16 bg-[#00205B] text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold mb-4">Proven Track Record</h2>
@@ -279,7 +282,7 @@ export default function WhyChooseUsPage() {
           </section>
 
           {/* Our Process Advantage */}
-          <section className="py-16 sm:py-20 bg-slate-50">
+          <section className="py-14 sm:py-16 bg-slate-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">Our Process Advantage</h2>
@@ -303,7 +306,7 @@ export default function WhyChooseUsPage() {
           </section>
 
           {/* What Sets Us Apart */}
-          <section className="py-16 sm:py-20 bg-white">
+          <section className="py-14 sm:py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl sm:text-4xl font-bold text-[#00205B] mb-4">What Sets Us Apart</h2>
@@ -329,7 +332,7 @@ export default function WhyChooseUsPage() {
           </section>
 
           {/* Risk-Free Consultation */}
-          <section className="py-16 sm:py-20 bg-[#C5B783] text-[#00205B]">
+          <section className="py-14 sm:py-16 bg-[#C5B783] text-[#00205B]">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl sm:text-4xl font-bold mb-6">See If We're the Right Fit - No Obligation</h2>
               <p className="text-xl mb-8">Most consultations lead to immediate cost-saving opportunities</p>
@@ -347,9 +350,15 @@ export default function WhyChooseUsPage() {
                   <p className="font-semibold">Cost Optimization</p>
                 </div>
               </div>
-              <Button size="lg" className="bg-[#00205B] hover:bg-[#003875] text-white font-semibold px-8 py-4 text-lg">
-                <Phone className="mr-2 h-5 w-5" />
-                Schedule Your Free Project Assessment
+              <Button
+                asChild
+                size="lg"
+                className="bg-[#00205B] hover:bg-[#003875] text-white font-semibold px-8 py-4 text-lg"
+              >
+                <Link href="/contact#contact-form" className="inline-flex items-center gap-2">
+                  <Phone className="h-5 w-5" />
+                  Schedule Your Free Project Assessment
+                </Link>
               </Button>
             </div>
           </section>

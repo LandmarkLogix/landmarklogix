@@ -33,7 +33,7 @@ const features = [
 export function WhyChooseSection() {
   return (
     <ErrorBoundary>
-      <section id="why-choose-us" className="py-16 sm:py-20 bg-white" aria-labelledby="why-choose-heading">
+      <section id="why-choose-us" className="py-14 sm:py-16 bg-white" aria-labelledby="why-choose-heading">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2

@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <ErrorBoundary>
       <section
-        className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-16 sm:py-20 lg:py-32"
+        className="relative bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white py-14 sm:py-18 lg:py-24"
         aria-labelledby="hero-heading"
       >
         <div className="absolute inset-0 bg-black/10" aria-hidden="true"></div>
@@ -41,12 +41,14 @@ export function HeroSection() {
                   </Button>
                 </Link>
                 <Button
+                  asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-brand-navy bg-transparent font-medium min-h-[44px] w-full sm:w-auto px-6 py-3 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
-                  aria-label="View our portfolio of landmark projects"
                 >
-                  View Our Work
+                  <Link href="/services" aria-label="View our portfolio of landmark projects">
+                    View Our Work
+                  </Link>
                 </Button>
               </div>
             </div>
