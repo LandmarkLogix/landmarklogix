@@ -138,7 +138,6 @@ export default function HealthcareWellnessPage() {
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
-                query="healthcare facility construction with modern medical equipment and healing environments"
               />
             </div>
           </div>
@@ -174,7 +173,6 @@ export default function HealthcareWellnessPage() {
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
-                query="wellness center design with natural light and therapeutic environments"
               />
             </div>
           </div>

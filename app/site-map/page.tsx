@@ -8,6 +8,7 @@ const sections = [
     links: [
       { href: "/", label: "Home" },
       { href: "/about", label: "About" },
+      { href: "/work", label: "Work" },
       { href: "/services", label: "Services" },
       { href: "/markets", label: "Markets" },
       { href: "/why-choose-us", label: "Why Choose Us" },
@@ -36,7 +37,7 @@ const sections = [
 
 export default function SiteMapPage() {
   return (
-    <PageTemplate maxWidth="4xl" paddingY="md">
+    <PageTemplate maxWidth="2xl" paddingY="md">
       <article className="space-y-10 text-brand-navy-deep">
         <header className="space-y-2">
           <p className="text-sm uppercase tracking-wide text-brand-navy/70">Site Map</p>

@@ -46,7 +46,7 @@ export function HeroSection() {
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-brand-navy bg-transparent font-medium min-h-[44px] w-full sm:w-auto px-6 py-3 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
                 >
-                  <Link href="/services" aria-label="View our portfolio of landmark projects">
+                  <Link href="/work" aria-label="View our portfolio of landmark projects">
                     View Our Work
                   </Link>
                 </Button>

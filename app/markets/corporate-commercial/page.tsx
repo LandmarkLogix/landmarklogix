@@ -138,7 +138,6 @@ export default function CorporateCommercialPage() {
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
-                query="modern corporate headquarters with glass facade and professional business environment"
               />
             </div>
           </div>
@@ -174,7 +173,6 @@ export default function CorporateCommercialPage() {
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
-                query="corporate workspace design with collaborative areas and modern business amenities"
               />
             </div>
           </div>

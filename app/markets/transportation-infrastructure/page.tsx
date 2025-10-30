@@ -137,7 +137,6 @@ export default function TransportationInfrastructurePage() {
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
-                query="transportation infrastructure construction with modern transit systems and connectivity solutions"
               />
             </div>
           </div>
@@ -173,7 +172,6 @@ export default function TransportationInfrastructurePage() {
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
-                query="infrastructure development with modern transportation systems and urban connectivity"
               />
             </div>
           </div>

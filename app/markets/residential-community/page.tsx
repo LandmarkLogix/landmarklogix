@@ -138,7 +138,6 @@ export default function ResidentialCommunityPage() {
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
-                query="residential community development with modern homes and neighborhood amenities"
               />
             </div>
           </div>
@@ -174,7 +173,6 @@ export default function ResidentialCommunityPage() {
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
-                query="community living spaces with shared amenities and family-friendly environments"
               />
             </div>
           </div>

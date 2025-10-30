@@ -173,7 +173,6 @@ export default function HospitalityTourismPage() {
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
-                query="hospitality guest experience design with modern amenities and service areas"
               />
             </div>
           </div>

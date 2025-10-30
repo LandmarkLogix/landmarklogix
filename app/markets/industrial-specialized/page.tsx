@@ -138,7 +138,6 @@ export default function IndustrialSpecializedPage() {
                 width={800}
                 height={600}
                 className="rounded-lg shadow-2xl"
-                query="industrial facility construction with advanced manufacturing equipment and precision engineering"
               />
             </div>
           </div>
@@ -174,7 +173,6 @@ export default function IndustrialSpecializedPage() {
                 width={600}
                 height={500}
                 className="rounded-lg shadow-lg"
-                query="specialized manufacturing environment with precision equipment and controlled conditions"
               />
             </div>
           </div>

@@ -1,73 +1,128 @@
 import { PageTemplate } from "@/components/layout/page-template"
 
-const lastUpdated = new Date("2025-01-01")
+const lastUpdated = new Date("2025-03-01")
 
 export default function PrivacyPolicyPage() {
   return (
-    <PageTemplate maxWidth="3xl" paddingY="md">
-      <article className="space-y-8 text-brand-navy-deep">
-        <header className="space-y-2">
+    <PageTemplate maxWidth="2xl" paddingY="md">
+      <article className="space-y-10 text-brand-navy-deep">
+        <header className="space-y-3">
           <p className="text-sm uppercase tracking-wide text-brand-navy/70">Privacy Policy</p>
-          <h1 className="text-3xl font-bold text-brand-navy">How Landmark Logix Handles Your Information</h1>
+          <h1 className="text-3xl font-bold text-brand-navy">Protecting your information is part of how we protect your projects</h1>
           <p className="text-sm text-slate-500">Last updated {lastUpdated.toLocaleDateString()}</p>
+          <p>
+            This Privacy Policy explains how Landmark Logix (“we,” “our,” or “us”) collects, uses, and safeguards personal
+            information obtained through our website, consultations, and professional services. It also outlines your
+            choices regarding the information you share with us.
+          </p>
         </header>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-brand-navy">1. Information We Collect</h2>
+          <h2 className="text-xl font-semibold text-brand-navy">1. Information we collect</h2>
           <p>
-            We collect the information you share with us when you request a consultation, subscribe to updates, or
-            communicate with our team. This may include your name, organization details, contact information, project
-            requirements, and any notes you include in correspondence.
+            We collect information directly from you when you complete a form, request a consultation, subscribe to
+            updates, or collaborate with our team. Depending on the interaction, this may include:
           </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-brand-navy">2. How We Use Your Information</h2>
-          <p>
-            Landmark Logix uses your information solely to respond to inquiries, prepare proposals, deliver project
-            services, and maintain our business records. We do not sell or rent your personal information.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-brand-navy">3. Sharing with Trusted Partners</h2>
-          <p>
-            When necessary to service your project, we may share relevant details with trusted consultants, legal
-            advisors, or technology partners who support our operations. These partners follow strict confidentiality
-            requirements and only receive the information needed to perform their role.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-brand-navy">4. Data Retention & Security</h2>
-          <p>
-            We retain project communications for as long as required to deliver services and comply with legal, tax, or
-            compliance obligations. Safeguards—both technical and procedural—are in place to protect your information
-            against unauthorized access, alteration, or disclosure.
-          </p>
-        </section>
-
-        <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-brand-navy">5. Your Choices</h2>
           <ul className="list-disc space-y-2 pl-5">
-            <li>Request a copy of the information we hold about you.</li>
-            <li>Ask us to update or correct inaccurate information.</li>
-            <li>Withdraw consent or request deletion of your data where legally permissible.</li>
+            <li>Identity and contact details such as name, email address, phone number, and company affiliation.</li>
+            <li>Project information including facility type, budget range, schedule expectations, and stakeholder lists.</li>
+            <li>Communications, notes, and supporting documents you choose to share with us during discovery or delivery.</li>
+            <li>Technical data such as IP address and browser characteristics captured through standard web analytics.</li>
           </ul>
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-brand-navy">6. Contact Us</h2>
+          <h2 className="text-xl font-semibold text-brand-navy">2. How we use your information</h2>
+          <p>We use the information we collect to:</p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Respond to inquiries, schedule consultations, and prepare tailored proposals.</li>
+            <li>Deliver, manage, and improve our owner's representation and advisory services.</li>
+            <li>Send project updates, industry insights, or event invitations when you opt in.</li>
+            <li>Maintain administrative records, comply with contractual obligations, and meet legal requirements.</li>
+          </ul>
+          <p>We do not sell or rent your personal information.</p>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-brand-navy">3. When we share information</h2>
           <p>
-            For privacy questions, please email <a className="font-medium" href="mailto:privacy@landmarklogix.com">privacy@landmarklogix.com</a> or call
-            <a className="font-medium" href="tel:+15551235263"> (555) 123-LAND</a>. We aim to respond within one business day.
+            We share personal information only when necessary to support your project or operate our business. Examples
+            include:
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>
+              Engaging trusted consultants, legal advisors, or technology partners who assist with project delivery or
+              business operations. These partners are bound by confidentiality commitments and may only use the
+              information for the services they provide.
+            </li>
+            <li>Complying with applicable laws, responding to lawful requests, or enforcing our agreements and policies.</li>
+            <li>
+              Completing a merger, acquisition, financing, or sale of assets—only to the extent the transaction requires
+              relevant information to proceed responsibly.
+            </li>
+          </ul>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-brand-navy">4. Data security</h2>
+          <p>
+            We implement administrative, technical, and physical safeguards designed to protect the information we hold.
+            These precautions include access controls, encryption for sensitive systems, secure file transfer protocols,
+            and employee training. While no security program can eliminate risk entirely, we continually assess and refine
+            our controls to stay ahead of evolving threats.
           </p>
         </section>
 
-        <p className="text-sm text-slate-500">
-          Landmark Logix may update this policy periodically to reflect regulatory, operational, or technological
-          changes. We encourage you to review it regularly.
-        </p>
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-brand-navy">5. Data retention</h2>
+          <p>
+            We retain personal information only as long as necessary to fulfill the purposes described in this policy—including
+            delivering services, maintaining business records, complying with legal obligations, resolving disputes, and
+            enforcing agreements. When data is no longer needed, we securely delete or anonymize it.
+          </p>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-brand-navy">6. Your choices and rights</h2>
+          <p>You may request the following at any time:</p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>Access to the personal information we hold about you.</li>
+            <li>Corrections to inaccurate or incomplete information.</li>
+            <li>Deletion of information when we no longer need it, subject to legal or contractual requirements.</li>
+            <li>Updates to your communication preferences or withdrawal of marketing consent.</li>
+          </ul>
+          <p>
+            To exercise these rights, email <a className="font-medium" href="mailto:privacy@landmarklogix.com">privacy@landmarklogix.com</a>. We may need to verify your identity
+            before completing certain requests.
+          </p>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-brand-navy">7. International visitors</h2>
+          <p>
+            Landmark Logix operates in the United States. If you access our services from outside the U.S., you
+            acknowledge that your information may be transferred to, stored in, and processed in the United States or other
+            jurisdictions where our partners operate. We take steps to ensure cross-border transfers comply with
+            applicable data-protection requirements.
+          </p>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-brand-navy">8. Policy updates</h2>
+          <p>
+            We may update this Privacy Policy to reflect regulatory changes, industry best practices, or improvements to
+            our services. When updates occur, we will revise the “Last updated” date above. Material changes will be
+            communicated through our website or directly to affected contacts.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-xl font-semibold text-brand-navy">9. Contact us</h2>
+          <p>
+            Questions or concerns? Email <a className="font-medium" href="mailto:privacy@landmarklogix.com">privacy@landmarklogix.com</a> or call
+            <a className="font-medium" href="tel:+15551235263"> (555) 123-LAND</a>. We aim to respond within one business day.
+          </p>
+        </section>
       </article>
     </PageTemplate>
   )

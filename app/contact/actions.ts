@@ -1,6 +1,14 @@
 "use server"
 
+import { Resend } from "resend"
 import { z } from "zod"
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
+const defaultRecipient = (process.env.CONTACT_FORWARD_TO ?? "info@landmarklogix.com")
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean)
+const defaultFromAddress = process.env.CONTACT_FROM_EMAIL ?? "no-reply@landmarklogix.com"
+
 
 export type ContactFormState = {
   status: "idle" | "success" | "error"
@@ -66,7 +74,48 @@ export async function submitContactForm(
     descriptionPreview: data.description?.slice(0, 160),
   })
 
-  await new Promise((resolve) => setTimeout(resolve, 350))
+  const messageLines = [
+    `New consultation request submitted on ${new Date().toLocaleString()}`,
+    "",
+    `Name: ${data.name}`,
+    `Email: ${data.email}`,
+    data.phone ? `Phone: ${data.phone}` : null,
+    data.company ? `Company: ${data.company}` : null,
+    data.projectType ? `Project type: ${data.projectType}` : null,
+    data.budgetRange ? `Budget range: ${data.budgetRange}` : null,
+    data.projectPhase ? `Project phase: ${data.projectPhase}` : null,
+    data.timeline ? `Timeline: ${data.timeline}` : null,
+    "",
+    "Project description:",
+    data.description || "(No additional details provided)",
+  ].filter(Boolean)
+
+  const recipientList = defaultRecipient.length > 0 ? defaultRecipient : ["info@landmarklogix.com"]
+
+  if (resend) {
+    try {
+      await resend.emails.send({
+        from: `Landmark Logix Website <${defaultFromAddress}>`,
+        to: recipientList,
+        replyTo: data.email,
+        subject: `New consultation request from ${data.name}`,
+        text: messageLines.join("\n"),
+      })
+    } catch (error) {
+      console.error("[contact] Failed to dispatch email notification", error)
+      return {
+        status: "error",
+        message:
+          "We received your request but couldn't notify the team automatically. Please reach out directly at info@landmarklogix.com while we resolve this.",
+      }
+    }
+  } else {
+    console.warn(
+      "[contact] RESEND_API_KEY not configured – submission stored in logs only. Set RESEND_API_KEY and CONTACT_FROM_EMAIL to enable notifications."
+    )
+  }
+
+  await new Promise((resolve) => setTimeout(resolve, 150))
 
   return {
     status: "success",
