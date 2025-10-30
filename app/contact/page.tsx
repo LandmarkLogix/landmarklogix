@@ -6,6 +6,8 @@ import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { ContactForm } from "@/components/forms/contact-form"
 
+export const dynamic = "force-dynamic"
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
