@@ -55,7 +55,7 @@ export function Header() {
                 }`}
                 role="menuitem"
               >
-                Work
+                Projects
               </Link>
             </li>
             <li role="none">
@@ -160,7 +160,7 @@ export function Header() {
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Work
+                Projects
               </Link>
               <Link
                 href="/services"
