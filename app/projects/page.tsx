@@ -4,6 +4,7 @@ import { PageTemplate } from "@/components/layout/page-template"
 import { ContentSection } from "@/components/layout/content-section"
 import { ImageWithFallback } from "@/components/image-with-fallback"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 
 const caseStudies = [
@@ -83,41 +84,60 @@ const differentiators = [
 
 export default function ProjectsPage() {
   return (
-    <PageTemplate>
-      <ContentSection spacing="lg">
-        <div className="grid gap-10 lg:grid-cols-[3fr,2fr] items-center">
-          <div className="space-y-4">
-            <p className="uppercase tracking-wide text-sm font-semibold text-brand-golden">Selected Projects</p>
-            <h1 className="text-4xl lg:text-5xl font-bold text-brand-navy text-balance">
-              Landmark destinations delivered with measurable results
-            </h1>
-            <p className="text-lg text-brand-navy-deep max-w-2xl">
-              From heritage stadiums to next-generation hospitality districts, Landmark Logix delivers complex programs
-              with the rigor, discipline, and stakeholder stewardship they demand. Explore representative engagements
-              that showcase our owner's representation model in action.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-brand-navy hover:bg-brand-navy-deep text-white">
-                <Link href="/contact">Discuss Your Project</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="border-brand-navy text-brand-navy">
-                <Link href="/services">View Full Capabilities</Link>
-              </Button>
+    <PageTemplate paddingY="none">
+      <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-gradient-to-br from-[#00205B] via-[#000034] to-[#00205B] text-white">
+        <div className="absolute inset-0 bg-black/15" aria-hidden="true" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
+          <div className="grid gap-10 lg:grid-cols-[3fr,2fr] items-start">
+            <div className="space-y-6 text-center lg:text-left">
+              <Badge className="bg-[#C5B783]/20 text-[#C5B783] border-[#C5B783]/30 font-medium tracking-wide uppercase w-fit mx-auto lg:mx-0">
+                Selected Projects
+              </Badge>
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-balance">
+                Landmark destinations delivered with measurable results
+              </h1>
+              <p className="text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0">
+                From heritage stadiums to next-generation hospitality districts, Landmark Logix delivers complex programs
+                with the rigor, discipline, and stakeholder stewardship they demand. Explore representative engagements
+                that showcase our owner's representation model in action.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button asChild size="lg" className="bg-[#C5B783] hover:bg-[#B5A67B] text-[#00205B] font-semibold">
+                  <Link href="/contact">Discuss Your Project</Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="border-white text-white hover:bg-white hover:text-[#00205B] bg-transparent font-medium"
+                >
+                  <Link href="/services">View Full Capabilities</Link>
+                </Button>
+              </div>
             </div>
-          </div>
-          <div className="rounded-lg bg-brand-golden/10 p-6 space-y-4 text-brand-navy">
-            <div className="flex items-center gap-3">
-              <BriefcaseBusiness className="h-6 w-6" aria-hidden="true" />
-              <span className="font-semibold tracking-wide uppercase text-sm">Program Snapshot</span>
+            <div className="rounded-2xl border border-white/15 bg-white/5 p-6 sm:p-8 space-y-5 backdrop-blur">
+              <div className="flex items-center gap-3">
+                <BriefcaseBusiness className="h-6 w-6 text-[#C5B783]" aria-hidden="true" />
+                <span className="font-semibold tracking-wide uppercase text-sm text-slate-100">Program Snapshot</span>
+              </div>
+              <ul className="space-y-3 text-base text-slate-100">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#C5B783] pt-1">•</span>
+                  <span>$2B+ total project value represented in the past five years</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#C5B783] pt-1">•</span>
+                  <span>Average 12% under initial budget while elevating scope outcomes</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#C5B783] pt-1">•</span>
+                  <span>Zero major claims escalated to litigation since founding</span>
+                </li>
+              </ul>
             </div>
-            <ul className="space-y-2 text-sm">
-              <li>• $2B+ total project value represented in the past five years</li>
-              <li>• Average 12% under initial budget while elevating scope outcomes</li>
-              <li>• Zero major claims escalated to litigation since founding</li>
-            </ul>
           </div>
         </div>
-      </ContentSection>
+      </section>
 
       <ContentSection spacing="lg" background="slate">
         <div className="space-y-12">
