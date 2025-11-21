@@ -81,7 +81,7 @@ const differentiators = [
   },
 ]
 
-export default function WorkPage() {
+export default function ProjectsPage() {
   return (
     <PageTemplate>
       <ContentSection spacing="lg">

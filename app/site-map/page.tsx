@@ -8,7 +8,7 @@ const sections = [
     links: [
       { href: "/", label: "Home" },
       { href: "/about", label: "About" },
-      { href: "/work", label: "Work" },
+      { href: "/projects", label: "Projects" },
       { href: "/services", label: "Services" },
       { href: "/markets", label: "Markets" },
       { href: "/why-choose-us", label: "Why Choose Us" },
