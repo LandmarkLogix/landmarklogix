@@ -45,19 +45,19 @@ export function Header() {
                 About
               </Link>
             </li>
-            <li role="none">
-              <Link
-                href="/work"
-                className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
-                  isActivePage("/work")
-                    ? "text-brand-navy border-brand-navy"
-                    : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
-                }`}
-                role="menuitem"
-              >
-                Projects
-              </Link>
-            </li>
+              <li role="none">
+                <Link
+                  href="/projects"
+                  className={`transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 rounded-sm px-3 py-2 border-b-2 ${
+                    isActivePage("/projects")
+                      ? "text-brand-navy border-brand-navy"
+                      : "text-brand-navy-deep hover:text-brand-golden border-transparent hover:border-brand-golden"
+                  }`}
+                  role="menuitem"
+                >
+                  Projects
+                </Link>
+              </li>
             <li role="none">
               <Link
                 href="/services"
@@ -140,28 +140,28 @@ export function Header() {
         {isMenuOpen && (
           <div id="mobile-menu" className="lg:hidden border-t border-slate-200 bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link
-                href="/about"
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                  isActivePage("/about")
-                    ? "text-brand-navy bg-slate-50"
-                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/work"
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
-                  isActivePage("/work")
-                    ? "text-brand-navy bg-slate-50"
-                    : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Projects
-              </Link>
+                <Link
+                  href="/about"
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                    isActivePage("/about")
+                      ? "text-brand-navy bg-slate-50"
+                      : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  About
+                </Link>
+                <Link
+                  href="/projects"
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                    isActivePage("/projects")
+                      ? "text-brand-navy bg-slate-50"
+                      : "text-brand-navy-deep hover:text-brand-golden hover:bg-slate-50"
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Projects
+                </Link>
               <Link
                 href="/services"
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${

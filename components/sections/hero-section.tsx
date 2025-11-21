@@ -30,27 +30,27 @@ export function HeroSection() {
                 From project inception to completion, we serve as your advocate, ensuring every aspect of your
                 construction project exceeds expectations and delivers exceptional results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/contact" aria-label="Schedule a project consultation">
-                  <Button
-                    size="lg"
-                    className="bg-brand-golden hover:bg-brand-golden-dark text-brand-navy font-semibold min-h-[44px] w-full sm:w-auto px-6 py-3 focus:outline-none focus:ring-2 focus:ring-brand-golden focus:ring-offset-2"
-                  >
-                    Schedule Project Consultation
-                    <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-                  </Button>
-                </Link>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-brand-navy bg-transparent font-medium min-h-[44px] w-full sm:w-auto px-6 py-3 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
-                >
-                  <Link href="/work" aria-label="View our portfolio of landmark projects">
-                    View Our Work
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Link href="/contact" aria-label="Schedule a project consultation">
+                    <Button
+                      size="lg"
+                      className="bg-brand-golden hover:bg-brand-golden-dark text-brand-navy font-semibold min-h-[44px] w-full sm:w-auto px-6 py-3 focus:outline-none focus:ring-2 focus:ring-brand-golden focus:ring-offset-2"
+                    >
+                      Schedule Project Consultation
+                      <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                    </Button>
                   </Link>
-                </Button>
-              </div>
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="outline"
+                    className="border-white text-white hover:bg-white hover:text-brand-navy bg-transparent font-medium min-h-[44px] w-full sm:w-auto px-6 py-3 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
+                  >
+                    <Link href="/projects" aria-label="View our portfolio of landmark projects">
+                      View Our Projects
+                    </Link>
+                  </Button>
+                </div>
             </div>
             <div className="relative order-first lg:order-last">
               <ImageWithFallback

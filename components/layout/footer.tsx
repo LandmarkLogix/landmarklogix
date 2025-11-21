@@ -93,38 +93,38 @@ export function Footer() {
             <h4 id="footer-links" className="font-semibold mb-3 sm:mb-4 text-brand-golden text-sm sm:text-base">
               Quick Links
             </h4>
-            <ul className="space-y-1 sm:space-y-2 text-slate-300 text-sm sm:text-base">
-              <li>
-                <Link href="/about" className="hover:text-brand-golden transition-colors duration-200">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/work" className="hover:text-brand-golden transition-colors duration-200">
-                  Work
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:text-brand-golden transition-colors duration-200">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/markets" className="hover:text-brand-golden transition-colors duration-200">
-                  Markets
-                </Link>
-              </li>
-              <li>
-                <Link href="/why-choose-us" className="hover:text-brand-golden transition-colors duration-200">
-                  Why Choose Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-brand-golden transition-colors duration-200">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+              <ul className="space-y-1 sm:space-y-2 text-slate-300 text-sm sm:text-base">
+                <li>
+                  <Link href="/about" className="hover:text-brand-golden transition-colors duration-200">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/projects" className="hover:text-brand-golden transition-colors duration-200">
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services" className="hover:text-brand-golden transition-colors duration-200">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/markets" className="hover:text-brand-golden transition-colors duration-200">
+                    Markets
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/why-choose-us" className="hover:text-brand-golden transition-colors duration-200">
+                    Why Choose Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-brand-golden transition-colors duration-200">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
           </nav>
 
           {/* Column 3 - Markets Served */}
